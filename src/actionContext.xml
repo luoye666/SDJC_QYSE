@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<!-- 系统管理所需Action配置 -->
+	<bean id="accountAction" class="com.stone.sys.action.AccountAction" scope="prototype">
+		<property name="userService" ref="userService" />
+	</bean>
+	<bean id="menuAction" class="com.stone.sys.action.MenuAction" scope="prototype">
+		<property name="menuService" ref="menuService" />
+	</bean>
+	<bean id="menuListAction" class="com.stone.sys.action.MenuListAction" scope="prototype">
+		<property name="baseService" ref="menuService" />
+	</bean>
+	<bean id="roleAction" class="com.stone.sys.action.RoleAction" scope="prototype">
+		<property name="baseService" ref="roleService" />
+	</bean>
+	<bean id="roleListAction" class="com.stone.sys.action.RoleListAction" scope="prototype">
+		<property name="roleService" ref="roleService" />
+	</bean>
+	<bean id="userAction" class="com.stone.sys.action.UserAction" scope="prototype">
+		<property name="userService" ref="userService" />
+	</bean>
+	<bean id="userListAction" class="com.stone.sys.action.UserListAction" scope="prototype">
+		<property name="userService" ref="userService" />
+	</bean>
+	<bean id="organAction" class="com.stone.sys.action.OrganAction" scope="prototype">
+		<property name="baseService" ref="organService"></property>
+	</bean>
+	<bean id="organListAction" class="com.stone.sys.action.OrganListAction" scope="prototype">
+		<property name="baseService" ref="organService"></property>
+	</bean>
+	<bean id="dicAction" class="com.stone.sys.action.DicAction" scope="prototype">
+		<property name="baseService" ref="dicService" />
+	</bean>
+	<bean id="dicListAction" class="com.stone.sys.action.DicListAction" scope="prototype">
+		<property name="baseService" ref="dicService" />
+	</bean>
+	<bean id="dirAction" class="com.stone.sys.action.SeDirectoryAction" scope="prototype">
+		<property name="dirService" ref="dirService" />
+	</bean>
+	<bean id="dirListAction" class="com.stone.sys.action.SeDirectoryListAction" scope="prototype">
+		<property name="dirService" ref="dirService" />
+	</bean>
+	<bean scope="prototype" class="com.stone.sys.action.LogsAction" id="logsAction">
+		<property name="logsService" ref="logsService"/>
+	</bean>
+	<bean scope="prototype" class="com.stone.sys.action.LogsListAction" id="logsListAction">
+		<property name="logsService" ref="logsService"/>
+	</bean>
+	<bean id="uploadAction" class="com.stone.sys.action.UploadAction" scope="prototype"></bean>
+	
+	<bean id="dbListAction" class="com.stone.sys.action.DbListAction" scope="prototype">
+		<property name="dbaService" ref="dbaService" />
+	</bean>
+	
+	<bean id="yzmAction" class="com.stone.sys.action.YanZhengMaAction" scope="prototype">
+		<property name="userService" ref="userService" />
+	</bean>
+	
+	<!-- 基础数据所需Action配置 -->
+	<bean id="seAction" class="com.stone.biz.jcsj.action.SEAction" scope="prototype">
+		<property name="seService" ref="seCommonService" />
+	</bean>
+	<bean id="seListAction" class="com.stone.biz.jcsj.action.SEListAction" scope="prototype">
+		<property name="seService" ref="seCommonService" />
+	</bean>
+	<bean id="registerAction" class="com.stone.biz.jcsj.action.RegisterAction" scope="prototype">
+		<property name="regService" ref="regService" />
+	</bean>
+	<bean id="registerListAction" class="com.stone.biz.jcsj.action.RegisterListAction" scope="prototype">
+		<property name="regService" ref="regService" />
+	</bean>
+	<!-- 单位管理所需Action配置 -->
+	<bean id="azUtilsListAction" class="com.stone.biz.utils.action.AzUtilsListAction" scope="prototype">
+		<property name="myService" ref="utilsService" />
+	</bean>
+	<bean id="syUtilsAction" class="com.stone.biz.utils.action.SyUtilsAction" scope="prototype">
+		<property name="myService" ref="utilsService" />
+	</bean>
+	<bean id="syUtilsListAction" class="com.stone.biz.utils.action.SyUtilsListAction" scope="prototype">
+		<property name="myService" ref="utilsService" />
+	</bean>
+	<!-- 人员管理  （作业人员） -->
+	<bean id="zyryAction" class="com.stone.biz.rygl.action.ZuoYeRenYuanAction" scope="prototype">
+		<property name="zuoyeService" ref="zuoyeService" />
+	</bean>
+	<bean id="zyryListAction" class="com.stone.biz.rygl.action.ZuoYeRenYuanListAction" scope="prototype">
+		<property name="zuoyeService" ref="zuoyeService" />
+	</bean>
+	<!-- 数据审核 -->
+	<bean id="sjshAction" class="com.stone.biz.sjsh.action.SjshAction" scope="prototype">
+		<property name="sjshService" ref="sjshService" />
+	</bean>
+	<bean id="sjshListAction" class="com.stone.biz.sjsh.action.SjshListAction" scope="prototype">
+		<property name="sjshService" ref="sjshService" />
+	</bean>
+	<!-- 报检管理 -->
+	<bean id="bjdAction" class="com.stone.biz.bjgl.action.BjdAction" scope="prototype">
+		<property name="bjdService" ref="bjdService" />
+	</bean>
+	<bean id="bjdListAction" class="com.stone.biz.bjgl.action.BjdListAction" scope="prototype">
+		<property name="bjdService" ref="bjdService" />
+	</bean>
+	<!-- web Service -->
+	<bean id="bjdWebImpl" class="com.stone.webservice.bjgl.action.BjdWebImpl" >
+		<property name="bjdWebService" ref="bjdWebService" />
+	</bean>
+	<bean id="seWebImpl" class="com.stone.webservice.segl.action.SeWebImpl" >
+		<property name="seWebService" ref="seWebService" />
+	</bean>
+	<bean id="kggzWebImpl" class="com.stone.webservice.kggz.action.KggzWebImpl" >
+		<property name="kggzWebService" ref="kggzWebService" />
+	</bean>
+	<bean id="qdWebImpl" class="com.stone.webservice.qd.action.QDWebImpl" >
+		<property name="qdWebService" ref="qdWebService" />
+	</bean>
+	<!-- 消息处理机制 -->
+	<bean class="com.stone.biz.message.action.MessageBoxListAction" id="messageBoxListAction" scope="prototype">
+		<property name="boxService" ref="boxService"></property>
+	</bean>
+	<bean class="com.stone.biz.message.action.MessageBoxAction" id="messageBoxAction" scope="prototype">
+		<property name="boxService" ref="boxService"></property>
+	</bean>
+</beans>

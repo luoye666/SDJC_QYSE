@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title></title>
+<style>
+	.filmvideo{
+		margin: 0 auto;
+		width: 1024px;
+		height: 768px;
+	}
+</style> 
+</head>
+<body >
+<div class="filmvideo">
+	<video width="1024" height="768"  controls>
+	  <source src="" type="video/mp4" id="video">
+
+	  您的浏览器不支持 HTML5 video 标签。
+	</video>
+</div>
+</body>
+<script type="text/javascript">
+	
+	getvalue();
+	function getvalue() {
+        var str = window.location.search;   //location.search是从当前URL的?号开始的字符串
+		str = str.substring(str.lastIndexOf("=")+1);
+    	document.getElementById("video").src = "http://218.57.139.17:9070/ziliao/"+str;
+    }
+</script>
+</html>

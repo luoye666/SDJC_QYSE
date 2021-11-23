@@ -1,0 +1,158 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            },{
+                "zidianmingcheng": "字典名称xxxxxxx", 
+                "zidiandaima": "zidiandaima", 
+                "zidianmiaoshu": "字典描述xxxx",
+                "zidianxiang":"xxxxxx"
+            }
+            
+        ]
+    }
+}

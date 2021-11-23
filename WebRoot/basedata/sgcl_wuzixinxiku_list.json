@@ -1,0 +1,104 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "wuzileibie": "防护用品", 
+                "suozaiquyu": "高新区", 
+                "shuliang": "100",
+                "suoshudanwei":"济南天特电梯有限公司",
+                "diliweizhi": "济南市天桥区花园路105号",
+                "wuzimingcheng":"防爆服"
+            },{
+                "wuzileibie": "生命救助", 
+                "suozaiquyu": "槐荫区", 
+                "shuliang": "100",
+                "suoshudanwei":"广州日立电梯济南分公司",
+                "diliweizhi": "济南市槐荫区",
+                "wuzimingcheng":"云梯"
+            },{
+                "wuzileibie": "临时食宿 ", 
+                "suozaiquyu": "历下区", 
+                "shuliang": "100",
+                "suoshudanwei":"巨人通力电梯有限公司",
+                "diliweizhi": "济南市历下区18号",
+                "wuzimingcheng":"炊具"
+            },{
+                "wuzileibie": "通讯广播", 
+                "suozaiquyu": "高新区", 
+                "shuliang": "10",
+                "suoshudanwei":"南通蒙哥马利电梯公司",
+                "diliweizhi": "济南市高新区108号",
+                "wuzimingcheng":"移动电话"
+            },{
+                "wuzileibie": "污染清理", 
+                "suozaiquyu": "历下区", 
+                "shuliang": "100",
+                "suoshudanwei":"济南明特电梯有限公司",
+                "diliweizhi": "济南市历下区201号",
+                "wuzimingcheng":"喷雾器"
+            },{
+                "wuzileibie": "污染清理", 
+                "suozaiquyu": "高新区", 
+                "shuliang": "200",
+                "suoshudanwei":"巨人通力电梯有限公司济南分公司",
+                "diliweizhi": "济南市高新区302号",
+                "wuzimingcheng":"杀菌灯"
+            },{
+                "wuzileibie": "动力燃料", 
+                "suozaiquyu": "槐荫区", 
+                "shuliang": "200",
+                "suoshudanwei":"济南明启电梯有限公司",
+                "diliweizhi": "济南市槐荫区200号",
+                "wuzimingcheng":"工业氧气瓶"
+            },{
+                "wuzileibie": "器材工具", 
+                "suozaiquyu": "历下区", 
+                "shuliang": "200",
+                "suoshudanwei":"南通蒙哥马利电梯公司",
+                "diliweizhi": "济南市历下区",
+                "wuzimingcheng":"灭火弹"
+            },{
+                "wuzileibie": "器材工具", 
+                "suozaiquyu": "天桥区", 
+                "shuliang": "102",
+                "suoshudanwei":"巨人通力电梯有限公司济南分公司",
+                "diliweizhi": "济南市天桥区201号",
+                "wuzimingcheng":"风力灭火机"
+            },{
+                "wuzileibie": "工程设备类", 
+                "suozaiquyu": "历下区", 
+                "shuliang": "200",
+                "suoshudanwei":"环球电梯生产有限公司",
+                "diliweizhi": "济南市历下区",
+                "wuzimingcheng":"推土机"
+            },{
+                "wuzileibie": "工程设备类", 
+                "suozaiquyu": "天桥区", 
+                "shuliang": "103",
+                "suoshudanwei":"利信达特种设备有限公司",
+                "diliweizhi": "济南市天桥区104号",
+                "wuzimingcheng":"挖掘机"
+            },{
+                "wuzileibie": "工程设备类", 
+                "suozaiquyu": "历下区", 
+                "shuliang": "200",
+                "suoshudanwei":"南通蒙哥马利电梯公司",
+                "diliweizhi": "济南市历下区",
+                "wuzimingcheng":"灭雹高射炮"
+            },{
+                "wuzileibie": "器材工具", 
+                "suozaiquyu": "天桥区", 
+                "shuliang": "132",
+                "suoshudanwei":"中恒特种设备有限公司",
+                "diliweizhi": "济南市天桥区201号",
+                "wuzimingcheng":"拖船"
+            } 
+            
+        ]
+    }
+}

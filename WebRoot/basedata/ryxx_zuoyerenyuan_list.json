@@ -1,0 +1,89 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+             {
+                "xingming": "周杰伦", 
+                "xingbie": "男", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18253198765", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-10-08"
+            },{
+                "xingming": "王祖蓝", 
+                "xingbie": "男", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18253197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-02-08"
+            },{
+                "xingming": "王宝强", 
+                "xingbie": "男", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18267197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-09-08"
+            },{
+                "xingming": "周润发", 
+                "xingbie": "女", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18278967965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-08-08"
+            },{
+                "xingming": "潘明生", 
+                "xingbie": "男", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18253197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-06-08"
+            },{
+                "xingming": "王嘉伟", 
+                "xingbie": "男", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18853197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-04-08"
+            },{
+                "xingming": "霍宝鑫", 
+                "xingbie": "男", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18753197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2014-02-08"
+            },{
+                "xingming": "刘金明", 
+                "xingbie": "男", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18853197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2014-08-08"
+            },{
+                "xingming": "王龙", 
+                "xingbie": "女", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18253197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2013-08-08"
+            },{
+                "xingming": "刘留", 
+                "xingbie": "男", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18553197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2014-08-08"
+            },{
+                "xingming": "黄晓明", 
+                "xingbie": "女", 
+                "jigoumingcheng": "湖北安特电梯厂", 
+                "lianxidianhua": "18753197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2013-08-08"
+            } 
+        ]
+    }
+}

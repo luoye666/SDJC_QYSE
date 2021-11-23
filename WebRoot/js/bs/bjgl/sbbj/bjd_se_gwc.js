@@ -1,0 +1,2 @@
+
+$("#gridi").trigger("reloadGrid");

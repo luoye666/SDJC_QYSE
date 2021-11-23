@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:cxf="http://cxf.apache.org/core"
+    xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+    xsi:schemaLocation="  
+        http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://cxf.apache.org/jaxrs 
+        http://cxf.apache.org/schemas/jaxrs.xsd">  
+ 
+ 	<!-- 引入CXF Bean定义如下,早期的版本中使用 -->
+    <import resource="classpath:META-INF/cxf/cxf.xml" />  
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+    
+    <!-- 带有接口的发布 -->
+    <!-- 
+        id:唯一标识
+        address：访问url
+		serviceClass：接口类型
+		配置restful方式的web服务
+     -->
+     
+    <jaxrs:server id="bjdWeb" address="/bjd" >
+         <jaxrs:serviceBeans>
+             <ref bean="bjdWebImpl"/>
+         </jaxrs:serviceBeans>
+         <jaxrs:inInterceptors>
+             <bean class="org.apache.cxf.interceptor.LoggingInInterceptor"></bean>
+         </jaxrs:inInterceptors>
+         <jaxrs:outInterceptors>
+             <bean class="org.apache.cxf.interceptor.LoggingOutInterceptor"></bean>
+         </jaxrs:outInterceptors>
+    </jaxrs:server>
+    
+    <jaxrs:server id="seWeb" address="/seweb" >
+         <jaxrs:serviceBeans>
+             <ref bean="seWebImpl"/>
+         </jaxrs:serviceBeans>
+         <jaxrs:inInterceptors>
+             <bean class="org.apache.cxf.interceptor.LoggingInInterceptor"></bean>
+         </jaxrs:inInterceptors>
+         <jaxrs:outInterceptors>
+             <bean class="org.apache.cxf.interceptor.LoggingOutInterceptor"></bean>
+         </jaxrs:outInterceptors>
+    </jaxrs:server>
+    
+ 	<jaxrs:server id="kggzWeb" address="/kggzweb" >
+         <jaxrs:serviceBeans>
+             <ref bean="kggzWebImpl"/>
+         </jaxrs:serviceBeans>
+         <jaxrs:inInterceptors>
+             <bean class="org.apache.cxf.interceptor.LoggingInInterceptor"></bean>
+         </jaxrs:inInterceptors>
+         <jaxrs:outInterceptors>
+             <bean class="org.apache.cxf.interceptor.LoggingOutInterceptor"></bean>
+         </jaxrs:outInterceptors>
+    </jaxrs:server>
+    
+    <jaxrs:server id="qdWeb" address="/qdweb" >
+         <jaxrs:serviceBeans>
+             <ref bean="qdWebImpl"/>
+         </jaxrs:serviceBeans>
+         <jaxrs:inInterceptors>
+             <bean class="org.apache.cxf.interceptor.LoggingInInterceptor"></bean>
+         </jaxrs:inInterceptors>
+         <jaxrs:outInterceptors>
+             <bean class="org.apache.cxf.interceptor.LoggingOutInterceptor"></bean>
+         </jaxrs:outInterceptors>
+    </jaxrs:server>
+        
+</beans>

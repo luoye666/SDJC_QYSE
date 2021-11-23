@@ -1,0 +1,108 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "shiyongdanwei": "和谐广场", 
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "AAAA-BBBB-CCCC-DDDD", 
+                "zhuceshijian": "2015-09-08" ,
+                "quyuhuafen":"槐荫区",
+                "zhuangtai":"停用"
+            },{
+                "shiyongdanwei": "群康家园", 
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2014-06-08" ,
+                "quyuhuafen":"天桥区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "黄台宾馆",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2014-02-08" ,
+                "quyuhuafen":"高新区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "龙奥大厦",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2013-02-08" ,
+                "quyuhuafen":"历下区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "双子大厦",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2013-02-08" ,
+                "quyuhuafen":"历下区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "良友富临大酒店",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2013-02-08" ,
+                "quyuhuafen":"历下区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "姜子鸭酒店",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2013-02-08" ,
+                "quyuhuafen":"市中区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "中恒酒店",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2013-02-08" ,
+                "quyuhuafen":"市中区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "和谐小区",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2012-02-08" ,
+                "quyuhuafen":"高新区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "幸福家院",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2012-02-08" ,
+                "quyuhuafen":"高新区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "济南市第二中学",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2012-02-08" ,
+                "quyuhuafen":"天桥区",
+                "zhuangtai":"在用"
+            },{
+                "shiyongdanwei": "济南九龙男科医院",  
+                "shebeileixing": "电梯", 
+                "shebeipinzhong": "客梯", 
+                "zhucedaima": "xxxx-xxxx-xxxx-xxxx", 
+                "zhuceshijian": "2012-02-08" ,
+                "quyuhuafen":"天桥区",
+                "zhuangtai":"在用"
+            }
+        ]
+    }
+}

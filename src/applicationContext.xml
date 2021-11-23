@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context   
+    http://www.springframework.org/schema/context/spring-context-2.4.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    ">
+    
+	<!-- 使用spring+hibernate处理oracle BLOB-->
+	<bean id="nativeJdbcExtractor" class="org.springframework.jdbc.support.nativejdbc.CommonsDbcpNativeJdbcExtractor" lazy-init="true" />
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.OracleLobHandler" lazy-init="true">
+		<property name="nativeJdbcExtractor">
+			<ref local="nativeJdbcExtractor" />
+		</property>
+	</bean>
+	
+	 <!-- 数据源配置, 使用 Druid 数据库连接池 -->
+    <bean id="DataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <!-- 数据源驱动类可不写，Druid默认会自动根据URL识别DriverClass -->
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+
+        <property name="url" value="jdbc:oracle:thin:@47.96.226.8:1521:orcl"/>
+        <property name="username" value="sejc"/>
+        <property name="password" value="sejc"/>
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="30"/>
+        <property name="minIdle" value="30"/>
+        <property name="maxActive" value="500"/>
+
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="60000"/>
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="90000"/>
+
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000"/>
+
+        <property name="validationQuery" value="select count(1) from dual"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+
+
+    </bean>
+	
+	<!-- 在spring配置sessionFactory，实现hibernate零配置-->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="DataSource" />
+		</property>
+		<property name="lobHandler" ref="lobHandler" />
+		<property name="packagesToScan">
+			<list>
+				<value>com.stone.*.pojo</value>
+				<value>com.stone.*.*.pojo</value>
+				<value>com.stone.webservice.segl.*.dongying</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+				<prop key="hibernate.max_fetch_depth">1</prop>
+				<prop key="hibernate.connection.autocommit">false</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">none</prop>
+    			<prop key="hibernate.autoReconnect">true</prop>
+    			<prop key="hibernate.connection.isolation">4</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 事务管理-->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="nestedTransactionAllowed" value="true"/>
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+ 	<!-- 使用注解的方式定义事物 -->
+	<tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager"/>
+	
+ 	<!-- AOP事务管理 Enable @AspectJ support -->
+	<aop:aspectj-autoproxy />
+	<tx:advice id="txService" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="save*"  propagation="REQUIRED" isolation="READ_COMMITTED" timeout="300" rollback-for="java.lang.Exception"/>
+			<tx:method name="add*"  propagation="REQUIRED" isolation="READ_COMMITTED" timeout="300" rollback-for="java.lang.Exception"/>
+			<tx:method name="upd*"  propagation="REQUIRED" isolation="READ_COMMITTED" timeout="300" rollback-for="java.lang.Exception"/>
+			<tx:method name="edit*"  propagation="REQUIRED" isolation="READ_COMMITTED" timeout="300" rollback-for="java.lang.Exception"/>
+			<tx:method name="del*"  propagation="REQUIRED" isolation="READ_COMMITTED" timeout="300" rollback-for="java.lang.Exception"/>
+			<tx:method name="do*"  propagation="REQUIRED" isolation="READ_COMMITTED" timeout="300" rollback-for="java.lang.Exception"/>
+			<tx:method name="get*" read-only="true"  propagation="SUPPORTS"/>
+			<tx:method name="find*" read-only="true" propagation="SUPPORTS"/>
+		</tx:attributes>
+	</tx:advice>
+	
+	<!-- AOP: Configuration and Aspects -->
+ 	<aop:config>
+ 		<aop:advisor id="serviceTx" advice-ref="txService" pointcut="execution(* *..service..*Service*.*(..))" />
+ 	</aop:config>
+	
+	<!-- Sequence配置 -->
+	<bean id="seqDAO" class="com.stone.utils.seq.SeqDAO" parent="baseDAO"></bean>
+	
+	<!-- 将基类DAO设置成抽象模板，避免二次实例化 -->
+	<bean id="baseDAO" class="frm.ssh.dao.BaseDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="baseService" class="frm.ssh.service.BaseService" abstract="true">
+   		<property name="baseDAO">
+			<ref bean="baseDAO" />
+		</property>
+	</bean>
+	
+	<bean id="supportService" class="com.stone.support.SupportService" abstract="true" >
+		<property name="baseDao" ref="baseDAO" />
+	</bean>	
+	<!--2.开启事务注解扫描-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	
+</beans>

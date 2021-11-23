@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<title>山东质监特种设备综合管理系统</title>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">  
+
+    var check = false;//是否可移动
+
+    $(document).ready(function(){ 
+
+        var h = $("#scrollContent").height(); 
+
+        var ih = $("#divcontent").height(); 
+
+        var mh = parseInt(h*h/ih); 
+
+        var h1 = parseInt($("#ypThumbContainer").height())-mh;//图片与div的高度差值
+
+        var h2 = parseInt(ih - h);//内容与边框div的高度差值
+
+         
+
+        $("#scrollContent").hover(function(){ 
+
+                if(ih > h){ 
+
+                    $("#ypThumbContainer").show("slow"); 
+
+                    $("#ypThumb").find("img").height(mh); 
+
+                    $("#ypThumb").show("slow"); 
+
+ 
+
+                    //begin 
+
+                    var oDiv = document.getElementById("ypThumbContainer"); 
+
+                    var oDiv2 = document.getElementById("ypThumb"); 
+
+                    var mouseStart={}; 
+
+                    var divStart={}; 
+
+                    var rightStart={}; 
+
+                    var bottomStart={}; 
+
+                     
+
+                    $(oDiv2).mousedown(function(ev){ 
+
+                        var oEvent = ev||event; 
+
+                        mouseStart.x = oEvent.clientX; 
+
+                        mouseStart.y = oEvent.clientY; 
+
+                        divStart.x = parseInt($(oDiv2).css("left")); 
+
+                        divStart.y = parseInt($(oDiv2).css("top")); 
+
+                         
+
+                         
+
+                        if(oDiv2.setCapture){ 
+
+                            oDiv2.setCapture(); 
+
+                            oDiv2.onmousemove = doDrag3; 
+
+                            oDiv2.onmouseup = stopDrag3; 
+
+                        }else{ 
+
+                            $(oDiv).bind("mousemove",doDrag3).bind("mouseup",stopDrag3); 
+
+                        } 
+
+                        oEvent.preventDefault(); 
+
+                    }); 
+
+                     
+
+                    function doDrag3(ev) { 
+
+                        var oEvent = ev||event; 
+
+                        var t = oEvent.clientY-mouseStart.y+divStart.y; 
+
+                        if(t < 0){ 
+
+                            t = 0; 
+
+                             
+
+                        }else if(t >= $(oDiv).height()-$(oDiv2).height()){ 
+
+                            t = $(oDiv).height()-$(oDiv2).height(); 
+
+                        } 
+
+                        $(oDiv2).css("top",t+"px"); 
+
+                        $("#divcontent").css("top",-(t*h2/h1)+"px"); 
+
+                    } 
+
+                     
+
+                    function stopDrag3(){ 
+
+                        if(oDiv2.releaseCapture){ 
+
+                            oDiv2.releaseCapture(); 
+
+                            oDiv2.onmousemove = null; 
+
+                            oDiv2.onmouseup = null; 
+
+                        }else{ 
+
+                            $(oDiv).unbind("mousemove",doDrag3).unbind("mouseup",stopDrag3); 
+
+                        } 
+
+                    } 
+
+                    //end 
+
+                } 
+
+            },function(){ 
+
+                $("#ypThumbContainer").hide("slow"); 
+
+                $("#ypThumb").hide("slow"); 
+
+         }); 
+
+    }); 
+
+ 
+
+ 
+
+</script>
+</head>
+
+<body>
+    <div style="width:150px;overflow:hidden;height:170px;border:1px #000 solid;z-index:1; position:relative;" id="scrollContent"> 
+
+    <div class="thumbContainer" id="ypThumbContainer" style="Z-INDEX: 3; right:0px; WIDTH: 9px; POSITION: absolute; TOP: 0px; HEIGHT: 170px;border:1px #000 solid; display:none"> 
+
+      <div class="thumb" id="ypThumb" style="POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #ffd200;"> 
+
+        <img class="thumbImg" id="ypThumbImg" height="50" src="images/thumb.gif" width="9" style="cursor:pointer;"/><br /> 
+
+        </div> 
+
+    </div> 
+
+    <div id="divcontent" style="position:absolute;"> 
+
+    中新网8月12日电 据最高人民法院网站消息，最高人民法院新闻发言人孙军工今日介绍，新婚姻法首次明确离婚案件中一方婚前贷款购买的不动产应归产权登记方所有，但应对参与还贷的配偶给予公平合理的补偿。
+
+    </div> 
+
+</div>   
+
+</body>
+</html>

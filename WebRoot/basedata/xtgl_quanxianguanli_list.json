@@ -1,0 +1,63 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "quanxianmingcheng": "增加", 
+                "quanxiandaima": "add", 
+                "quanxianmiaoshu": "可以进行增加数据",
+                "quanxianleibie":"基本权限"
+            },{
+                "quanxianmingcheng": "删除", 
+                "quanxiandaima": "delete", 
+                "quanxianmiaoshu": "可以对数据进行删除",
+                "quanxianleibie":"基本权限"
+            },{
+                "quanxianmingcheng": "修改", 
+                "quanxiandaima": "update", 
+                "quanxianmiaoshu": "可以进行修改数据",
+                "quanxianleibie":"基本权限"
+            },{
+                "quanxianmingcheng": "查询", 
+                "quanxiandaima": "query", 
+                "quanxianmiaoshu": "可以进行查询数据",
+                "quanxianleibie":"基本权限"
+            },{
+                "quanxianmingcheng": "审核", 
+                "quanxiandaima": "examine", 
+                "quanxianmiaoshu": "审核",
+                "quanxianleibie":"基本权限"
+            },{
+                "quanxianmingcheng": "编制", 
+                "quanxiandaima": "Organization", 
+                "quanxianmiaoshu": "编制",
+                "quanxianleibie":"基本权限"
+            },{
+                "quanxianmingcheng": "人员管理", 
+                "quanxiandaima": "ManManager", 
+                "quanxianmiaoshu": "对人员进行管理",
+                "quanxianleibie":"高级权限"
+            },{
+                "quanxianmingcheng": "机构管理", 
+                "quanxiandaima": "MechanismManager", 
+                "quanxianmiaoshu": "对机构进行管理",
+                "quanxianleibie":"高级权限"
+            },{
+                "quanxianmingcheng": "日志管理", 
+                "quanxiandaima": "logManager", 
+                "quanxianmiaoshu": "对日志进行管理",
+                "quanxianleibie":"高级权限"
+            },{
+                "quanxianmingcheng": "角色管理", 
+                "quanxiandaima": "RoleManagement", 
+                "quanxianmiaoshu": "对角色进行管理",
+                "quanxianleibie":"高级权限"
+            }   
+             
+        ]
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>批量打印</title>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<META HTTP-EQUIV="expires" CONTENT="0"> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+      #mytable {  
+    	padding: 0;
+    	margin: 0;  
+    	border-collapse:collapse;
+	  }
+	  td {
+    	border: 1px solid #C1DAD7;  
+    	background: #fff;
+    	font-size:12px;
+    	padding: 6px 6px 6px 12px;
+    	color: red;
+	  }
+	  td.alt {
+    	background: #F5FAFA;
+    	color: #797268;
+     }
+    </style>
+    <OBJECT classid=CLSID:8856F961-340A-11D0-A96B-00C04FD705A2 height=0 id=wb name=wb width=0></OBJECT>
+    <script type="text/VBScript">
+	class myClass
+       sub initPrint()
+           wb.execwb 6,2,3
+       end sub
+    end class
+	set obj=new myClass
+	</script>
+    <script type="text/JAVAScript">
+    	var printBglx = "";
+        //点击后按钮失效
+        function disabledButton(){
+			var inputs = document.getElementsByTagName("input");
+			for(var i = 0;i<inputs.length;i++){
+				if(inputs[i].type.toLowerCase()=="button"){
+					inputs[i].disabled=true;
+				}		
+			}
+	    }
+        //取得参数
+        function GetUrlQuery(Name) {
+        	var searchStr = window.location.search.substr(1);
+ 			var reg = new RegExp("(^|&)" + Name + "=([^&]*)(&|$)");
+ 			var r = searchStr.split("bglx=")[0].match(reg);
+ 			if (r != null){
+ 				printBglx = searchStr.split("bglx=")[1];
+  				return unescape(r[2]);
+  			}
+  			
+ 		    return null;
+		}
+		//打印操作
+		function printOpt(){
+			var num = document.getElementById("dyfs").value;
+			if(num == "" || num == 0){
+				alert("请输入要打印的份数!");
+				return false;
+			}
+            disabledButton();
+            var svrhost=window.location.host;
+           var searchStr = window.location.href;
+        	var svrpath="http://"+svrhost;
+        	var urlStrx=GetUrlQuery("urls");
+        	if(urlStrx!="" && urlStrx!=null){
+        		var urlArray= new Array();
+        		urlArray=urlStrx.split(","); 
+        		for(var i = 0;i<urlArray.length;i++){
+        			for(var n = 0;n<num;n++){
+        				var urlx=svrpath+"/SDJC/register!djbDyByJsp.do?yl="+printBglx+"&id="+urlArray[i];
+		      			printURL(urlx);
+		    		}
+        		}
+        		self.close();
+		   }else{
+		        alert("您没有选择要打印的记录！");
+		   } 
+        }
+		
+		
+		 //打印URL
+		function printURL(sHref) {
+			if(document.getElementById && document.all && sHref){  
+		 		   if(!self.oPrintElm){
+		      			var aHeads = document.getElementsByTagName('HEAD');
+		      			if(!aHeads || !aHeads.length){
+		        			return false;
+		        		}
+		      			if(!self.oPrintElm){
+		        			self.oPrintElm = document.createElement('LINK');
+		        	    }
+		      			self.oPrintElm.rel = 'alternate';
+		      			self.oPrintElm.media = 'print';
+		      			aHeads[0].appendChild(self.oPrintElm);
+		        	}
+			    	self.oPrintElm.href = sHref;
+			    	self.focus();  
+			  		obj.initPrint()
+			    	return true;
+		    }else{
+		    	return false;
+		    }
+		}
+       
+		function IsNum(e) {
+            var k = window.event ? e.keyCode : e.which;
+            if (((k >= 48) && (k <= 57)) || k == 8 || k == 0) {
+            } else {
+                if (window.event) {
+                    window.event.returnValue = false;
+                }
+                else {
+                    e.preventDefault(); //for firefox 
+                }
+            }
+        }
+		
+	</script>
+  </head>
+  <body>
+   <form id="form1" name="form1" method="post" action="">
+   	<table  id="mytable">
+   	 <tr>
+   	 	  <td align="right" class="alt">提示信息：</td>
+   	 	  <td>确认本计算机已经正常连接打印机，点击[打印]按钮进行打印！</td> 
+   	 </tr>
+   	 <tr>
+   	 	  <td align="right" class="alt">打印份数：</td>
+   	 	  <td>
+   	 	  	<input type="text" value="1" id="dyfs" onkeypress="return IsNum(event)" maxlength="1" style="width: 50px"/>
+   	 	  </td> 
+   	 </tr>
+   	 <tr align="center">
+   	 	<td colspan=2><input type="button"  value="--打印--" ONCLICK="printOpt()"/></td>
+   	 </tr>
+   	</table>
+   </form>
+  </body>
+</html>

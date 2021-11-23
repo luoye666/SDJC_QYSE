@@ -1,0 +1,100 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "danweimingcheng": "河北明安电梯厂", 
+                "daiweidizhi": "北京市天桥区花园路105号", 
+                "zuzhijigoudaima": "46650460-6", 
+                "xukeriqi":"2015-07-08", 
+                "farendaibiao": "赵洪亮" ,
+                "lianxidianhua":"18754322222",
+                "gongsiwangzhi":"www.mingan.com"
+            },{
+                "danweimingcheng": "河南勇威特种设备有限公司", 
+                "daiweidizhi": "河南省郑州市阿荣市六合镇", 
+                "zuzhijigoudaima": "466645640-6", 
+                "xukeriqi":"2014-06-08", 
+                "farendaibiao": "周杰伦" ,
+                "lianxidianhua":"15204997890",
+                "gongsiwangzhi":"www.yongwei.com"
+            },{
+                "danweimingcheng": "广州日立电梯济南分公司", 
+                "daiweidizhi": "山大路178号银座数码广场16层", 
+                "zuzhijigoudaima": "46650460-6", 
+                "xukeriqi":"2015-07-08", 
+                "farendaibiao": "孟鹤" ,
+                "lianxidianhua":"18754322222",
+                "gongsiwangzhi":"www.guangzhou.com"
+            },{
+                "danweimingcheng": "巨人通力电梯有限公司济南分公司", 
+                "daiweidizhi": "济南市天桥区花园路105号", 
+                "zuzhijigoudaima": "46650460-6", 
+                "xukeriqi":"2015-02-08", 
+                "farendaibiao": "张凤" ,
+                "lianxidianhua":"18754324548",
+                "gongsiwangzhi":"www.jurentongli.com"
+            },{
+                "danweimingcheng": "南通蒙哥马利电梯公司济南分公司", 
+                "daiweidizhi": "洪家楼西路39号智慧大厦4层", 
+                "zuzhijigoudaima": "46667660-6", 
+                "xukeriqi":"2015-03-08", 
+                "farendaibiao": "赵洪亮" ,
+                "lianxidianhua":"18754322222",
+                "gongsiwangzhi":"www.nantong.com"
+            },{
+                "danweimingcheng": "河南勇威特种设备有限公司", 
+                "daiweidizhi": "河南省郑州市阿荣市六合镇", 
+                "zuzhijigoudaima": "466645640-6", 
+                "xukeriqi":"2014-06-08", 
+                "farendaibiao": "周杰伦" ,
+                "lianxidianhua":"15204997890",
+                "gongsiwangzhi":"www.yongwei.com"
+            },{
+                "danweimingcheng": "广州日立电梯济南分公司", 
+                "daiweidizhi": "山大路178号银座数码广场16层", 
+                "zuzhijigoudaima": "46650460-6", 
+                "xukeriqi":"2015-07-08", 
+                "farendaibiao": "孟鹤" ,
+                "lianxidianhua":"18754322222",
+                "gongsiwangzhi":"www.guangzhou.com"
+            },{
+                "danweimingcheng": "巨人通力电梯有限公司济南分公司", 
+                "daiweidizhi": "济南市天桥区花园路105号", 
+                "zuzhijigoudaima": "46650460-6", 
+                "xukeriqi":"2015-02-08", 
+                "farendaibiao": "张凤" ,
+                "lianxidianhua":"18754324548",
+                "gongsiwangzhi":"www.jurentongli.com"
+            },{
+                "danweimingcheng": "南通蒙哥马利电梯公司济南分公司", 
+                "daiweidizhi": "洪家楼西路39号智慧大厦4层", 
+                "zuzhijigoudaima": "46667660-6", 
+                "xukeriqi":"2015-03-08", 
+                "farendaibiao": "赵洪亮" ,
+                "lianxidianhua":"18754322222",
+                "gongsiwangzhi":"www.nantong.com"
+            },{
+                "danweimingcheng": "南通蒙哥马利电梯公司济南分公司", 
+                "daiweidizhi": "洪家楼西路39号智慧大厦4层", 
+                "zuzhijigoudaima": "46667660-6", 
+                "xukeriqi":"2015-03-08", 
+                "farendaibiao": "赵洪亮" ,
+                "lianxidianhua":"18754322222",
+                "gongsiwangzhi":"www.nantong.com"
+            },{
+                "danweimingcheng": "河南勇威特种设备有限公司", 
+                "daiweidizhi": "河南省郑州市阿荣市六合镇", 
+                "zuzhijigoudaima": "466645640-6", 
+                "xukeriqi":"2014-06-08", 
+                "farendaibiao": "周杰伦" ,
+                "lianxidianhua":"15204997890",
+                "gongsiwangzhi":"www.yongwei.com"
+            }
+        ]
+    }
+}

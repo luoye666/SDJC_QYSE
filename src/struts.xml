@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.multipart.saveDir" value="/udfiles" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.serve.static.vrowserCache" value="true" />
+	<include file="struts-default.xml"></include>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	
+	<package name="struts_global" extends="struts-default">
+		<result-types>
+	   		<result-type name="json" class="com.stone.support.SupportJSONResult"></result-type>
+	   	</result-types>
+		<interceptors>
+				<!-- <interceptor name="etr" class="frm.ssh.interceptor.ExceptionInterceptor"/> -->
+		 	<interceptor name="loginForward" class="com.stone.para.LoginInterceptor"></interceptor> 
+			<interceptor name="ctr" class="frm.ssh.interceptor.CtrInterceptor"/>
+	   		<interceptor name="supportExceptionInterceptor" class="com.stone.support.SupportExceptionInterceptor"></interceptor>
+	   		<interceptor-stack name="myStack">
+					<!-- <interceptor-ref name="etr"/> -->
+	   	 			<interceptor-ref name="loginForward">
+	   	 		 		<param name="excludeMethods">login</param>
+	   	 			</interceptor-ref>
+ 					<interceptor-ref name="ctr"/>
+	    			<interceptor-ref name="defaultStack"/>
+	    			<interceptor-ref name="supportExceptionInterceptor"></interceptor-ref>
+	   		</interceptor-stack>
+	   	</interceptors>
+   	 	<default-interceptor-ref name="myStack"/>
+		<global-results>
+			<result name="login" type="redirect">jsp/common/login.jsp</result>
+			<result type="json" name="success"></result>
+			<result type="json" name="error"></result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="error" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+	
+	<!-- 系统管理模块控制器配置 -->
+	<package name="struts_sys" extends="struts_global">
+		<action name="account" class="accountAction">
+			<result name="login_success">jsp/common/index.jsp</result>
+			<result name="login_error">jsp/common/login.jsp</result>
+			<!-- 审核中或审核拒绝的账号 -->
+			<result name="login_sh">jsp/common/login_info.jsp</result>
+			<result name="qingdao">jsp/common/error.jsp</result>
+		</action>
+		<!-- 菜单管理 -->
+		<action name="menu" class="menuAction">
+			<result name="OPEN_MENU_SUCCESS">jsp/sys/menuManager_editMenu.jsp</result>
+		</action>
+		<action name="menuList" class="menuListAction" ></action>
+		<!-- 角色管理 -->
+		<action name="role" class="roleAction">
+			<result name="OPEN_ROLE_SUCCESS">jsp/sys/roleManager_editRole.jsp</result>
+		</action>
+		<action name="roleList" class="roleListAction"></action>
+		<!-- 人员管理 -->
+		<action name="user" class="userAction">
+			<result name="OPEN_USER_SUCCESS">jsp/sys/userManager_editUser.jsp</result>
+			<result name="OPEN_USER_SH_SUCCESS">jsp/common/user_sh_edit.jsp</result>
+			<result name="ajax">jsp/sys/userSetypeAjax.jsp</result>
+			<result name="login_painless">jsp/common/painless.jsp</result>
+		</action>
+		<action name="userList" class="userListAction"></action>
+		<action name="upload" class="uploadAction"></action>
+		<!-- 机构管理 -->
+		<action name="organ" class="organAction">
+			<result name="OPEN_ORGAN_SUCCESS">/jsp/sys/organManager_editOrgan.jsp</result>
+		</action>
+		<action name="organList" class="organListAction"></action>
+		<!-- 字典管理 -->
+		<action name="dic" class="dicAction">
+			<result name="OPEN_DIC_TYPE_SUCCESS">/jsp/sys/dicTypeManager_editDicType.jsp</result>
+			<result name="OPEN_DIC_DATA_SUCCESS">/jsp/sys/dicDataManager_editDicData.jsp</result>
+			
+			<result name="OPEN_DB_TYPE_SUCCESS">/jsp/sys/dbTypeManager_editDicType.jsp</result>
+			<result name="OPEN_DB_DATA_SUCCESS">/jsp/sys/dbDataManager_editDicData.jsp</result>
+		</action>
+		<action name="dicList" class="dicListAction"></action>
+		<action name="dbaList" class="dbListAction">
+			<result name="OPEN_DB_SCDW_SUCCESS">/jsp/biz/dbxx/shengchandanwei_info.jsp</result>
+		</action>
+		<!-- 设备目录 -->
+		<action name="dir" class="dirAction"></action>
+		<action name="dirList" class="dirListAction"></action>
+		<!-- 验证码 -->
+		<action name="registerChkNumber" class="yzmAction">  
+		   <result type="stream">    
+		        <param name="contentType">image/jpeg</param>    
+		        <param name="inputName">inputStream</param>    
+		    </result>  
+		</action>  
+	</package>	
+	<!-- 基础数据管理模块控制器配置 -->
+	<package name="struts_jcsj" extends="struts_global">
+		<action name="se" class="seAction">
+			<result name="OPEN_GL_SE_SUCCESS">/jsp/biz/sbxx/1000/jscs_sb_yzc_1000.jsp</result>
+			<result name="OPEN_YLRQ_SE_SUCCESS">/jsp/biz/sbxx/2000/jscs_sb_yzc_2000.jsp</result>
+			<result name="OPEN_DT_SE_SUCCESS">/jsp/biz/sbxx/3000/jscs_sb_yzc_3000.jsp</result>
+			<result name="OPEN_QZJX_SE_SUCCESS">/jsp/biz/sbxx/4000/jscs_sb_yzc_4000.jsp</result>
+			<result name="OPEN_CNC_SE_SUCCESS">/jsp/biz/sbxx/5000/jscs_sb_yzc_5000.jsp</result>
+			<result name="OPEN_YLSS_SE_SUCCESS">/jsp/biz/sbxx/6000/jscs_sb_yzc_6000.jsp</result>
+			<result name="OPEN_YLGD_SE_SUCCESS">/jsp/biz/sbxx/8000/jscs_sb_yzc_8000.jsp</result>
+			<result name="OPEN_KYSD_SE_SUCCESS">/jsp/biz/sbxx/9000/jscs_sb_yzc_9000.jsp</result>
+			<result name="OPEN_CYQP_SE_SUCCESS">/jsp/biz/sbxx/Q000/jscs_sb_yzc_CYQP.jsp</result>
+			<result name="OPEN_QP_SE_SUCCESS">/jsp/biz/sbxx/Q000/jscs_sb_yzc_Q000.jsp</result>
+			<result name="OPEN_SE_DW_SUCCESS">/jsp/biz/sbxx/jcsj_sb_upd_dw.jsp</result>
+			
+			<result name="DJZ">/jsp/biz/sbxx/excel/dengjibiao.jsp</result>
+			<result name="GL_CS">/jsp/biz/sbxx/excel/1000/guolu.jsp</result>
+			<result name="YLRQ_CS">/jsp/biz/sbxx/excel/2000/yalirongqishuxing.jsp</result>
+			<result name="DT_CS">/jsp/biz/sbxx/excel/3000/diantishuxing.jsp</result>
+			<result name="DTZD_CS">/jsp/biz/sbxx/excel/3000/zidongfuti.jsp</result>
+			<result name="QZJJXS_CS">/jsp/biz/sbxx/excel/4000/jixieshi.jsp</result>
+			<result name="QZJLS_CS">/jsp/biz/sbxx/excel/4000/lansuoshi.jsp</result>
+			<result name="QZJLD_CS">/jsp/biz/sbxx/excel/4000/liudong.jsp</result>
+			<result name="QZJMS_CS">/jsp/biz/sbxx/excel/4000/menshi.jsp</result>
+			<result name="QZJMZ_CS">/jsp/biz/sbxx/excel/4000/menzuo.jsp</result>
+			<result name="QZJQS_CS">/jsp/biz/sbxx/excel/4000/qiaoshi.jsp</result>
+			<result name="QZJSJJ_CS">/jsp/biz/sbxx/excel/4000/shengjiangji.jsp</result>
+			<result name="QZJTS_CS">/jsp/biz/sbxx/excel/4000/tashi.jsp</result>
+			<result name="QZJWG_CS">/jsp/biz/sbxx/excel/4000/weiganshi.jsp</result>
+			
+			<result name="CCFLY_CS">/jsp/biz/sbxx/excel/5000/lvyou.jsp</result>
+			<result name="CC_CS">/jsp/biz/sbxx/excel/5000/chache.jsp</result>
+			<result name="YLSS_CS">/jsp/biz/sbxx/excel/6000/ylss.jsp</result>
+			<result name="SD_CS">/jsp/biz/sbxx/excel/9000/suodao.jsp</result>
+			
+			<result name="OPEN_GL_YLGD">/jsp/biz/sbxx/1000/gl_ylgd.jsp</result>
+			<result name="OPEN_DW_INFO_QYHX">/jsp/biz/sbxx/huaxiang/danwei_info.jsp</result>
+		</action>
+		<action name="seList" class="seListAction"></action>
+		<action name="apprizes" class="apprizesAction">
+			<result name="OPEN_GZD_SUCCESS">/jsp/biz/jcgl/xzsb_edit.jsp</result>
+			<result name="GZD_DY_SUCCESS">/jsp/biz/jcgl/xzsb_dy.jsp</result>
+		</action>
+		<action name="register" class="registerAction">
+			
+			<result name="GL_ZCDJB_DY">/jsp/biz/zcdj/1000/gl_zcdj_dy.jsp</result>
+			<result name="YLRQ_ZCDJB_DY">/jsp/biz/zcdj/2000/ylrq_zcdj_dy.jsp</result>
+			<result name="DT_ZCDJB_DY">/jsp/biz/zcdj/3000/dt_zcdj_dy.jsp</result>
+			<result name="QZJX_ZCDJB_DY">/jsp/biz/zcdj/4000/qzjx_zcdj_dy.jsp</result>
+			<result name="CNC_ZCDJB_DY">/jsp/biz/zcdj/5000/cnc_zcdj_dy.jsp</result>
+			<result name="YLSS_ZCDJB_DY">/jsp/biz/zcdj/6000/ylss_zcdj_dy.jsp</result>
+			<result type="freemarker" name="YLGD_ZCDJB_DY">/jsp/biz/zcdj/8000/ylgd_zcdj_dy.ftl</result>
+			<result name="KYSD_ZCDJB_DY">/jsp/biz/zcdj/9000/kysd_zcdj_dy.jsp</result>
+			<result name="CYQP_ZCDJB_DY">/jsp/biz/zcdj/Q000/cyqp_zcdj_dy.jsp</result>
+			<result name="QP_ZCDJB_DY">/jsp/biz/zcdj/Q000/qp_zcdj_dy.jsp</result>
+		
+			
+			<result name="QITA_ZCDJB_DY">/jsp/biz/zcdj/qita/qita_zcdj_dy.jsp</result>
+			
+			<result name="GL_SYDJZ_DY">/jsp/biz/sbxx/1000/gl_sydjz_dy.jsp</result>
+			<result name="YLRQ_SYDJZ_DY">/jsp/biz/sbxx/2000/ylrq_sydjz_dy.jsp</result>
+			<result name="DT_SYDJZ_DY">/jsp/biz/sbxx/3000/dt_sydjz_dy.jsp</result>
+			<result name="QZJX_SYDJZ_DY">/jsp/biz/sbxx/4000/qzjx_sydjz_dy.jsp</result>
+			<result name="CNC_SYDJZ_DY">/jsp/biz/sbxx/5000/cnc_sydjz_dy.jsp</result>
+			<result name="YLGD_SYDJZ_DY">/jsp/biz/sbxx/8000/ylgd_sydjz_dy.jsp</result>
+			
+			
+			<result name="OPEN_GL_ZCDJB_SUCCESS">/jsp/biz/zcdj/1000/gl_zcdj_edit.jsp</result>
+			<result name="OPEN_YLRQ_ZCDJB_SUCCESS">/jsp/biz/zcdj/2000/ylrq_zcdj_edit.jsp</result>
+			<result name="OPEN_DT_ZCDJB_SUCCESS">/jsp/biz/zcdj/3000/dt_zcdj_edit.jsp</result>
+			<result name="OPEN_QZJX_ZCDJB_SUCCESS">/jsp/biz/zcdj/4000/qzjx_zcdj_edit.jsp</result>
+			<result name="OPEN_CNC_ZCDJB_SUCCESS">/jsp/biz/zcdj/5000/cnc_zcdj_edit.jsp</result>
+			<result name="OPEN_YLSS_ZCDJB_SUCCESS">/jsp/biz/zcdj/6000/ylss_zcdj_edit.jsp</result>
+			<result name="OPEN_YLGD_ZCDJB_SUCCESS">/jsp/biz/zcdj/8000/ylgd_zcdj_edit.jsp</result>
+			<result name="OPEN_KYSD_ZCDJB_SUCCESS">/jsp/biz/zcdj/9000/kysd_zcdj_edit.jsp</result>
+			<result name="OPEN_CYQP_ZCDJB_SUCCESS">/jsp/biz/zcdj/Q000/cyqp_zcdj_edit.jsp</result>
+			<result name="OPEN_QP_ZCDJB_SUCCESS">/jsp/biz/zcdj/Q000/qp_zcdj_edit.jsp</result>
+			
+			
+			<result name="ADD_GL_ZCDJB_SUCCESS">/jsp/biz/zcdj/1000/gl_zcdj_add.jsp</result>
+			<result name="ADD_YLRQ_ZCDJB_SUCCESS">/jsp/biz/zcdj/2000/ylrq_zcdj_add.jsp</result>
+			<result name="ADD_DT_ZCDJB_SUCCESS">/jsp/biz/zcdj/3000/dt_zcdj_add.jsp</result>
+			<result name="ADD_QZJX_ZCDJB_SUCCESS">/jsp/biz/zcdj/4000/qzjx_zcdj_add.jsp</result>
+			<result name="ADD_CNC_ZCDJB_SUCCESS">/jsp/biz/zcdj/5000/cnc_zcdj_add.jsp</result>
+			<result name="ADD_YLSS_ZCDJB_SUCCESS">/jsp/biz/zcdj/6000/ylss_zcdj_add.jsp</result>
+			<result name="ADD_YLGD_ZCDJB_SUCCESS">/jsp/biz/zcdj/8000/ylgd_zcdj_add.jsp</result>
+			<result name="ADD_KYSD_ZCDJB_SUCCESS">/jsp/biz/zcdj/9000/kysd_zcdj_add.jsp</result>
+			<result name="ADD_CYQP_ZCDJB_SUCCESS">/jsp/biz/zcdj/Q000/cyqp_zcdj_add.jsp</result>
+			<result name="ADD_QP_ZCDJB_SUCCESS">/jsp/biz/zcdj/Q000/qp_zcdj_add.jsp</result>
+			
+		</action>
+		<action name="registerList" class="registerListAction"></action>
+		
+		<!-- 消息处理机制 -->
+		<action name="messageBox" class="messageBoxAction">
+			<result name="OPEN_MSG_SUCCESS">/jsp/message/message_edit.jsp</result>
+			<result name="GET_NEIRONG_SUCCESS">/jsp/message/message_neirong.jsp</result>
+			<result name="ADD_MSG_SUCCESS">/jsp/message/message_add.jsp</result>
+		</action>
+		<action name="messageBoxList" class="messageBoxListAction"/>
+		<action name="downloadBox" class="downloadBoxAction"></action>
+		<action name="downloadBoxList" class="downloadBoxListAction"></action>
+	</package>
+	
+<!-- 单位 -->
+	<package name="struts_utils" extends="struts_global" >
+
+		<!-- 使用单位  START -->
+		<action name="syUtils" class="syUtilsAction">
+			<result name="OPEN_SYDW_SUCCESS">/jsp/biz/utils/syUtils_edit.jsp</result>
+			<result name="OPEN_INSPECT_SUCCESS">/jsp/biz/utils/enterprise_inspect_edit.jsp</result>
+		</action>
+		<action name="syUtilsList" class="syUtilsListAction"></action>
+		<!-- 安装单位  START -->
+		<action name="azUtilsList" class="azUtilsListAction"></action>
+	</package>
+<!-- 人员 -->
+	<package name="struts_rygl" extends="struts_global" >
+		<!-- 作业人员管理 -->
+		<action name="zyry" class="zyryAction">
+			<result name="OPEN_ZYRY_SUCCESS">/jsp/biz/rygl/zuoyerenyuan_edit.jsp</result>
+		</action>
+		<action name="zyryList" class="zyryListAction"></action>
+	</package>
+<!-- 数据审核 -->
+	<package name="struts_sjsh" extends="struts_global" >
+		<action name="sjsh" class="sjshAction">
+			<result name="OPEN_SYDW_INFO_SUCCESS">/jsp/biz/utils/syUtils_edit.jsp</result>
+			<result name="OPEN_GL_INFO_SUCCESS">/jsp/biz/sbxx/1000/jscs_sb_yzc_1000.jsp</result>
+			<result name="OPEN_YLRQ_INFO_SUCCESS">/jsp/biz/sbxx/2000/jscs_sb_yzc_2000.jsp</result>
+			<result name="OPEN_DT_INFO_SUCCESS">/jsp/biz/sbxx/3000/jscs_sb_yzc_3000.jsp</result>
+			<result name="OPEN_QZJX_INFO_SUCCESS">/jsp/biz/sbxx/4000/jscs_sb_yzc_4000.jsp</result>
+			<result name="OPEN_CNC_INFO_SUCCESS">/jsp/biz/sbxx/5000/jscs_sb_yzc_5000.jsp</result>
+			<result name="OPEN_YLSS_INFO_SUCCESS">/jsp/biz/sbxx/6000/jscs_sb_yzc_6000.jsp</result>
+			<result name="OPEN_YLGD_INFO_SUCCESS">/jsp/biz/sbxx/8000/jscs_sb_yzc_8000.jsp</result>
+			<result name="OPEN_KYSD_INFO_SUCCESS">/jsp/biz/sbxx/9000/jscs_sb_yzc_9000.jsp</result>
+			<result name="OPEN_CYQP_INFO_SUCCESS">/jsp/biz/sbxx/Q000/jscs_sb_yzc_CYQP.jsp</result>
+			<result name="OPEN_QP_INFO_SUCCESS">/jsp/biz/sbxx/Q000/jscs_sb_yzc_Q000.jsp</result>
+		</action>
+		<action name="sjshList" class="sjshListAction"></action>
+	</package>
+	<!-- 报检管理 -->
+	<package name="struts_bjgl" extends="struts_global" >
+		<action name="bjd" class="bjdAction">
+			<result name="QY_BJD_INFO_SUCCESS">/jsp/biz/bjgl/sbbj/sbbj_info.jsp</result>
+		</action>
+		<action name="bjdList" class="bjdListAction"></action>
+	</package>
+</struts>

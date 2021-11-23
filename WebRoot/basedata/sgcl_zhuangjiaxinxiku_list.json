@@ -1,0 +1,96 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "zhuanjiaxingming": "赵洪亮", 
+                "suozaiquyu": "天桥区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "50", 
+                "biyexuexiao": "北京大学"
+            },{
+                "zhuanjiaxingming": "朱长森", 
+                "suozaiquyu": "市中区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "40", 
+                "biyexuexiao": "清华大学"
+            },{
+                "zhuanjiaxingming": "刘芬", 
+                "suozaiquyu": "槐荫区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "女", 
+                "nianling": "50", 
+                "biyexuexiao": "济南广播电视大学"
+            },{
+                "zhuanjiaxingming": "张敏", 
+                "suozaiquyu": "天桥区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "45", 
+                "biyexuexiao": "北京航空航天大学"
+            },{
+                "zhuanjiaxingming": "陈丽娜", 
+                "suozaiquyu": "历下区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "46", 
+                "biyexuexiao": "海天软件学院"
+            },{
+                "zhuanjiaxingming": "吴秀波", 
+                "suozaiquyu": "高新区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "47", 
+                "biyexuexiao": "北京大学"
+            },{
+                "zhuanjiaxingming": "陈丽娜", 
+                "suozaiquyu": "历下区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "46", 
+                "biyexuexiao": "海天软件学院"
+            },{
+                "zhuanjiaxingming": "吴秀波", 
+                "suozaiquyu": "高新区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "47", 
+                "biyexuexiao": "北京大学"
+            },{
+                "zhuanjiaxingming": "吴可嘉", 
+                "suozaiquyu": "历下区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "46", 
+                "biyexuexiao": "山东凯文职业技术学院"
+            },{
+                "zhuanjiaxingming": "于战友", 
+                "suozaiquyu": "高新区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "47", 
+                "biyexuexiao": "山东英才职业技术学院"
+            },{
+                "zhuanjiaxingming": "陈红", 
+                "suozaiquyu": "历下区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "女", 
+                "nianling": "46", 
+                "biyexuexiao": "北京大学"
+            },{
+                "zhuanjiaxingming": "马天宇", 
+                "suozaiquyu": "高新区", 
+                "zhuanchang": "计算机专业",
+                "xingbie": "男", 
+                "nianling": "40", 
+                "biyexuexiao": "南京大学"
+            } 
+        ]
+    }
+}

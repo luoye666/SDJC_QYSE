@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="struts_global" location="1710,360" size="170,70" />
+  <package name="struts_sys" location="10,10" size="1505,455">
+    <action name="account" location="1045,372" size="150,41">
+      <result name="login_success">
+        <resourceEdge source="login_success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="menu" location="1045,268" size="150,40" />
+    <action name="menuList" location="1290,268" size="150,40" />
+    <action name="role" location="1290,163" size="150,40" />
+    <action name="roleList" location="1045,163" size="150,40" />
+    <action name="user" location="1045,57" size="150,41">
+      <result name="ajax">
+        <resourceEdge source="ajax" routing="0" target="userSetypeAjax.jsp" />
+      </result>
+    </action>
+    <action name="userList" location="65,58" size="150,40" />
+    <action name="organ" location="65,303" size="150,40" />
+    <action name="organList" location="800,303" size="150,40" />
+    <action name="dic" location="800,128" size="150,40" />
+    <action name="dicList" location="310,128" size="150,40" />
+    <action name="dir" location="310,233" size="150,40" />
+    <action name="dirList" location="555,233" size="150,40" />
+    <action name="mesGroup" location="0,0" size="0,0" />
+    <action name="mesGroupList" location="0,0" size="0,0" />
+    <action name="mesGroupUserList" location="0,0" size="0,0" />
+    <action name="jbpmList" location="0,0" size="0,0" />
+    <action name="jbpm" location="0,0" size="0,0">
+      <result name="PNG_SUCCESS" />
+    </action>
+    <action name="messageBox" location="0,0" size="0,0" />
+    <action name="messageBoxList" location="0,0" size="0,0" />
+    <action name="downloadBox" location="0,0" size="0,0" />
+    <action name="downloadBoxList" location="0,0" size="0,0" />
+    <action name="logs" location="0,0" size="0,0" />
+    <action name="logsList" location="0,0" size="0,0" />
+  </package>
+  <package name="struts_jcsj" location="1565,255" size="460,70">
+    <action name="se" location="5,23" size="150,40" />
+    <action name="seList" location="245,23" size="150,40" />
+  </package>
+  <package name="struts_bjgl" location="745,710" size="1190,455">
+    <action name="bjd" location="975,373" size="150,40" />
+    <action name="bjdList" location="65,373" size="150,40" />
+    <action name="hzd" location="65,57" size="150,41">
+      <result name="HZD_SUCCESS">
+        <resourceEdge source="HZD_SUCCESS" routing="0" target="hzd_print.jsp" />
+      </result>
+      <result name="HZD_SUCCESS_INFO">
+        <resourceEdge source="HZD_SUCCESS_INFO" routing="0" target="hzd_print_info.jsp" />
+      </result>
+    </action>
+    <action name="hzdList" location="65,163" size="150,40" />
+  </package>
+  <package name="struts_hjgl" location="2685,360" size="180,70">
+    <action name="formula" location="5,23" size="150,40" />
+  </package>
+  <package name="struts_rwgl" location="1880,465" size="460,210">
+    <action name="rw" location="5,23" size="150,40" />
+    <action name="rwList" location="245,23" size="150,40" />
+    <action name="yj" location="5,163" size="150,40" />
+    <action name="yjList" location="245,163" size="150,40" />
+  </package>
+  <package name="struts_flow" location="0,0" size="0,0">
+    <action name="flow" location="0,0" size="0,0" />
+    <action name="flowList" location="0,0" size="0,0" />
+  </package>
+  <package name="struts_bggl" location="0,0" size="0,0">
+    <action name="reportList" location="0,0" size="0,0">
+      <result name="PRINT_CKDT_SUCCESS">
+        <resourceEdge source="PRINT_CKDT_SUCCESS" routing="0" target="jybg_ckdt_print_dj.jsp" />
+      </result>
+      <result name="PRINT_QZS_SUCCESS">
+        <resourceEdge source="PRINT_QZS_SUCCESS" routing="0" target="jybg_ckdt_print_aj.jsp" />
+      </result>
+      <result name="PRINT_YYSDT_YJF_SUCCESS">
+        <resourceEdge source="PRINT_YYSDT_YJF_SUCCESS" routing="0" target="jybg_yysdt_print_yjf_aj.jsp" />
+      </result>
+      <result name="PRINT_YYSDT_WJF_SUCCESS">
+        <resourceEdge source="PRINT_YYSDT_WJF_SUCCESS" routing="0" target="jybg_yysdt_print_wjf_aj.jsp" />
+      </result>
+      <result name="PRINT_YYHT_SUCCESS">
+        <resourceEdge source="PRINT_YYHT_SUCCESS" routing="0" target="jybg_yyht_print.jsp" />
+      </result>
+      <result name="PRINT_YYKT_SUCCESS">
+        <resourceEdge source="PRINT_YYKT_SUCCESS" routing="0" target="jybg_yykt_print.jsp" />
+      </result>
+      <result name="PRINT_ZWDT_AJ_SUCCESS">
+        <resourceEdge source="PRINT_ZWDT_AJ_SUCCESS" routing="0" target="jybg_zwdt_print_aj.jsp" />
+      </result>
+      <result name="PRINT_ZWDT_DJ_SUCCESS">
+        <resourceEdge source="PRINT_ZWDT_DJ_SUCCESS" routing="0" target="jybg_zwdt_print_dj.jsp" />
+      </result>
+      <result name="PRINT_ZDFT_AJ_SUCCESS">
+        <resourceEdge source="PRINT_ZDFT_AJ_SUCCESS" routing="0" target="jybg_zdft_print_aj.jsp" />
+      </result>
+      <result name="PRINT_ZDFT_DJ_SUCCESS">
+        <resourceEdge source="PRINT_ZDFT_DJ_SUCCESS" routing="0" target="jybg_zdft_print_dj.jsp" />
+      </result>
+      <result name="PRINT_QIAOSHI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_QIAOSHI_DJ_SUCCESS" routing="0" target="jybg_qiaoshi_print_dj.jsp" />
+      </result>
+      <result name="PRINT_QIAOSHI_AJ_SUCCESS">
+        <resourceEdge source="PRINT_QIAOSHI_AJ_SUCCESS" routing="0" target="jybg_qiaoshi_aj_print.jsp" />
+      </result>
+      <result name="PRINT_MENSHI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_MENSHI_DJ_SUCCESS" routing="0" target="jybg_menshi_print_dj.jsp" />
+      </result>
+      <result name="PRINT_MENSHI_AJ_SUCCESS">
+        <resourceEdge source="PRINT_MENSHI_AJ_SUCCESS" routing="0" target="jybg_menshi_aj_print.jsp" />
+      </result>
+      <result name="PRINT_TASHI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_TASHI_DJ_SUCCESS" routing="0" target="jybg_tashi_print_dj.jsp" />
+      </result>
+      <result name="PRINT_TASHI_AJ_SUCCESS">
+        <resourceEdge source="PRINT_TASHI_AJ_SUCCESS" routing="0" target="jybg_tashi_aj_print.jsp" />
+      </result>
+      <result name="PRINT_MENZUO_DJ_SUCCESS">
+        <resourceEdge source="PRINT_MENZUO_DJ_SUCCESS" routing="0" target="jybg_menzuo_print_dj.jsp" />
+      </result>
+      <result name="PRINT_MENZUO_AJ_SUCCESS">
+        <resourceEdge source="PRINT_MENZUO_AJ_SUCCESS" routing="0" target="jybg_mz_aj_print.jsp" />
+      </result>
+      <result name="PRINT_SHENGJIANGJI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_SHENGJIANGJI_DJ_SUCCESS" routing="0" target="jybg_shengjiangji_print_dj.jsp" />
+      </result>
+      <result name="PRINT_JIXIESHI_DJ_SUCCESS_4D10">
+        <resourceEdge source="PRINT_JIXIESHI_DJ_SUCCESS_4D10" routing="0" target="jybg_jixieshi_print_dj_4D10.jsp" />
+      </result>
+      <result name="PRINT_JIXIESHI_DJ_SUCCESS_4D70">
+        <resourceEdge source="PRINT_JIXIESHI_DJ_SUCCESS_4D70" routing="0" target="jybg_jixieshi_print_dj_4D70.jsp" />
+      </result>
+      <result name="PRINT_JIXIESHI_DJ_SUCCESS_4D80">
+        <resourceEdge source="PRINT_JIXIESHI_DJ_SUCCESS_4D80" routing="0" target="jybg_jixieshi_print_dj_4D80.jsp" />
+      </result>
+      <result name="PRINT_JIXIESHI_AJ_SUCCESS_4D10">
+        <resourceEdge source="PRINT_JIXIESHI_AJ_SUCCESS_4D10" routing="0" target="jybg_jixieshi_4D10_aj_print.jsp" />
+      </result>
+      <result name="PRINT_JIXIESHI_AJ_SUCCESS_4D70">
+        <resourceEdge source="PRINT_JIXIESHI_AJ_SUCCESS_4D70" routing="0" target="jybg_jixieshi_4D70_aj_print.jsp" />
+      </result>
+      <result name="PRINT_JIXIESHI_AJ_SUCCESS_4D80">
+        <resourceEdge source="PRINT_JIXIESHI_AJ_SUCCESS_4D80" routing="0" target="jybg_jixieshi_4D80_aj_print.jsp" />
+      </result>
+      <result name="PRINT_LIUDONG_DJ_SUCCESS">
+        <resourceEdge source="PRINT_LIUDONG_DJ_SUCCESS" routing="0" target="jybg_liudong_print_dj.jsp" />
+      </result>
+      <result name="PRINT_1100_NJ_SUCCESS">
+        <resourceEdge source="PRINT_1100_NJ_SUCCESS" routing="0" target="jybg_1100_nj_print.jsp" />
+      </result>
+      <result name="PRINT_1100_WJ_SUCCESS">
+        <resourceEdge source="PRINT_1100_WJ_SUCCESS" routing="0" target="jybg_1100_wj_print.jsp" />
+      </result>
+      <result name="PRINT_1300_NJ_SUCCESS">
+        <resourceEdge source="PRINT_1300_NJ_SUCCESS" routing="0" target="jybg_1300_nj_print.jsp" />
+      </result>
+      <result name="PRINT_1300_WJ_SUCCESS">
+        <resourceEdge source="PRINT_1300_WJ_SUCCESS" routing="0" target="jybg_1300_wj_print.jsp" />
+      </result>
+      <result name="PRINT_SHUICHULI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_SHUICHULI_DJ_SUCCESS" routing="0" target="jybg_gygl_scl_print.jsp" />
+      </result>
+      <result name="PRINT_CC_DJ_SUCCESS">
+        <resourceEdge source="PRINT_CC_DJ_SUCCESS" routing="0" target="jybg_cc_print.jsp" />
+      </result>
+      <result name="PRINT_CC_AJ_SUCCESS">
+        <resourceEdge source="PRINT_CC_AJ_SUCCESS" routing="0" target="jybg_cc_aj_print.jsp" />
+      </result>
+      <result name="PRINT_YJZRT_WJ_DJ_SUCCESS">
+        <resourceEdge source="PRINT_YJZRT_WJ_DJ_SUCCESS" routing="0" target="jybg_yjrzt_wj_print.jsp" />
+      </result>
+      <result name="PRINT_YJZRT_NJ_DJ_SUCCESS">
+        <resourceEdge source="PRINT_YJZRT_NJ_DJ_SUCCESS" routing="0" target="jybg_yjrzt_nj_print.jsp" />
+      </result>
+      <result name="PRINT_DZ_WJ_DJ_SUCCESS">
+        <resourceEdge source="PRINT_DZ_WJ_DJ_SUCCESS" routing="0" target="jybg_dz_wj_print.jsp" />
+      </result>
+      <result name="PRINT_DZ_NJ_DJ_SUCCESS">
+        <resourceEdge source="PRINT_DZ_NJ_DJ_SUCCESS" routing="0" target="jybg_dz_nj_print.jsp" />
+      </result>
+      <result name="PRINT_GYGL_WJ_DJ_SUCCESS">
+        <resourceEdge source="PRINT_GYGL_WJ_DJ_SUCCESS" routing="0" target="jybg_gygl_wj_print.jsp" />
+      </result>
+      <result name="PRINT_GYGL_NJ_DJ_SUCCESS">
+        <resourceEdge source="PRINT_GYGL_NJ_DJ_SUCCESS" routing="0" target="jybg_gygl_nj_print.jsp" />
+      </result>
+      <result name="PRINT_GLZZ_AJ_SUCCESS">
+        <resourceEdge source="PRINT_GLZZ_AJ_SUCCESS" routing="0" target="jybg_glzz_print.jsp" />
+      </result>
+      <result name="PRINT_GLSZ_AJ_SUCCESS">
+        <resourceEdge source="PRINT_GLSZ_AJ_SUCCESS" routing="0" target="jybg_glsz_print.jsp" />
+      </result>
+    </action>
+    <action name="report" location="0,0" size="0,0">
+      <result name="PRINT_SUCCESS">
+        <resourceEdge source="PRINT_SUCCESS" routing="0" target="jybg_print.jsp" />
+      </result>
+      <result name="PRINT_QZJX_SUCCESS">
+        <resourceEdge source="PRINT_QZJX_SUCCESS" routing="0" target="jybg_qzjx_print.jsp" />
+      </result>
+      <result name="PRINT_QZJXJZPH_SUCCESS">
+        <resourceEdge source="PRINT_QZJXJZPH_SUCCESS" routing="0" target="jybg_qzjx_jzph_print.jsp" />
+      </result>
+      <result name="PRINT_INFO_SUCCESS">
+        <resourceEdge source="PRINT_INFO_SUCCESS" routing="0" target="jybg_info.jsp" />
+      </result>
+      <result name="PRINT_QZJXINFO_SUCCESS">
+        <resourceEdge source="PRINT_QZJXINFO_SUCCESS" routing="0" target="jybg_info.jsp" />
+      </result>
+      <result name="YLRQ_ZT_SUCCESS">
+        <resourceEdge source="YLRQ_ZT_SUCCESS" routing="0" target="jybg_ylrq_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_YC_SUCCESS">
+        <resourceEdge source="YLRQ_YC_SUCCESS" routing="0" target="jybg_ylrq_yc_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_BHCD_SUCCESS">
+        <resourceEdge source="YLRQ_BHCD_SUCCESS" routing="0" target="jybg_ylrq_bhcd_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_BHJH_SUCCESS">
+        <resourceEdge source="YLRQ_BHJH_SUCCESS" routing="0" target="jybg_ylrq_bhjh_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_YDJC_SUCCESS">
+        <resourceEdge source="YLRQ_YDJC_SUCCESS" routing="0" target="jybg_ylrq_ydjc_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_JXFX_SUCCESS">
+        <resourceEdge source="YLRQ_JXFX_SUCCESS" routing="0" target="jybg_ylrq_jxfx_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_NYSY_SUCCESS">
+        <resourceEdge source="YLRQ_NYSY_SUCCESS" routing="0" target="jybg_ylrq_nysy_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_FJJY_SUCCESS">
+        <resourceEdge source="YLRQ_FJJY_SUCCESS" routing="0" target="jybg_ylrq_fjjy_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_QMX_SUCCESS">
+        <resourceEdge source="YLRQ_QMX_SUCCESS" routing="0" target="jybg_ylrq_qmxsy_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_AJL_SUCCESS">
+        <resourceEdge source="YLRQ_AJL_SUCCESS" routing="0" target="jybg_ylrq_ajlsy_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_CFFX_SUCCESS">
+        <resourceEdge source="YLRQ_CFFX_SUCCESS" routing="0" target="jybg_ylrq_clcffx_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_HLSJL_SUCCESS">
+        <resourceEdge source="YLRQ_HLSJL_SUCCESS" routing="0" target="jybg_ylrq_hlsjlsy_dj_dy.jsp" />
+      </result>
+      <result name="YLRQ_AQFJ_SUCCESS">
+        <resourceEdge source="YLRQ_AQFJ_SUCCESS" routing="0" target="jybg_ylrq_aqfjjy_dj_dy.jsp" />
+      </result>
+      <result name="WS_CS_SUCCESS">
+        <resourceEdge source="WS_CS_SUCCESS" routing="0" target="jybg_ws_csjc_dy.jsp" />
+      </result>
+      <result name="WS_CF_SUCCESS">
+        <resourceEdge source="WS_CF_SUCCESS" routing="0" target="jybg_ws_cfjy_dy.jsp" />
+      </result>
+      <result name="WS_ST_SUCCESS">
+        <resourceEdge source="WS_ST_SUCCESS" routing="0" target="jybg_ws_stjc_dy.jsp" />
+      </result>
+      <result name="WS_SX_SUCCESS">
+        <resourceEdge source="WS_SX_SUCCESS" routing="0" target="jybg_ws_sxjc_dy.jsp" />
+      </result>
+      <result name="WS_SFS_SUCCESS">
+        <resourceEdge source="WS_SFS_SUCCESS" routing="0" target="jybg_ws_sfsjc_dy.jsp" />
+      </result>
+      <result name="WS_TOTD_SUCCESS">
+        <resourceEdge source="WS_TOTD_SUCCESS" routing="0" target="jybg_ws_ysscf_dy.jsp" />
+      </result>
+    </action>
+    <action name="ysjlList" location="0,0" size="0,0">
+      <result name="PRINT_YYSDT_DJ_SUCCESS">
+        <resourceEdge source="PRINT_YYSDT_DJ_SUCCESS" routing="0" target="ysjl_yysdt_dj_print.jsp" />
+      </result>
+      <result name="PRINT_YYDT_DJ_SUCCESS">
+        <resourceEdge source="PRINT_YYDT_DJ_SUCCESS" routing="0" target="ysjl_yydt_dj_print.jsp" />
+      </result>
+      <result name="PRINT_ZWDT_DJ_SUCCESS">
+        <resourceEdge source="PRINT_ZWDT_DJ_SUCCESS" routing="0" target="ysjl_zwdt_dj_print.jsp" />
+      </result>
+      <result name="PRINT_ZDFT_DJ_SUCCESS">
+        <resourceEdge source="PRINT_ZDFT_DJ_SUCCESS" routing="0" target="ysjl_zdft_dj_print.jsp" />
+      </result>
+      <result name="PRINT_YYSDT_AJ_SUCCESS_WJF">
+        <resourceEdge source="PRINT_YYSDT_AJ_SUCCESS_WJF" routing="0" target="ysjl_yysdt_aj_wjf_print.jsp" />
+      </result>
+      <result name="PRINT_YYSDT_AJ_SUCCESS_YJF">
+        <resourceEdge source="PRINT_YYSDT_AJ_SUCCESS_YJF" routing="0" target="ysjl_yysdt_aj_yjf_print.jsp" />
+      </result>
+      <result name="PRINT_YYSDT_AJ_SUCCESS">
+        <resourceEdge source="PRINT_YYSDT_AJ_SUCCESS" routing="0" target="ysjl_yysdt_aj_qzqd_print.jsp" />
+      </result>
+      <result name="PRINT_YYDT_AJ_SUCCESS">
+        <resourceEdge source="PRINT_YYDT_AJ_SUCCESS" routing="0" target="ysjl_yydt_aj_print.jsp" />
+      </result>
+      <result name="PRINT_ZWDT_AJ_SUCCESS">
+        <resourceEdge source="PRINT_ZWDT_AJ_SUCCESS" routing="0" target="ysjl_zwdt_aj_print.jsp" />
+      </result>
+      <result name="PRINT_ZDFT_AJ_SUCCESS">
+        <resourceEdge source="PRINT_ZDFT_AJ_SUCCESS" routing="0" target="ysjl_zdft_aj_print.jsp" />
+      </result>
+      <result name="PRINT_QIAOSHI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_QIAOSHI_DJ_SUCCESS" routing="0" target="ysjl_qzjx_qs_print.jsp" />
+      </result>
+      <result name="PRINT_MENSHI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_MENSHI_DJ_SUCCESS" routing="0" target="ysjl_qzjx_ms_print.jsp" />
+      </result>
+      <result name="PRINT_QIAOSHI_AJ_SUCCESS">
+        <resourceEdge source="PRINT_QIAOSHI_AJ_SUCCESS" routing="0" target="ysjl_qzjx_qs_print.jsp" />
+      </result>
+      <result name="XIANGMUBIAO_PRINT_JJ_MENSHI">
+        <resourceEdge source="XIANGMUBIAO_PRINT_JJ_MENSHI" routing="0" target="xiangmubiao_print_jj_menshi.jsp" />
+      </result>
+      <result name="XIANGMUBIAO_PRINT_JJ_QIAOSHI">
+        <resourceEdge source="XIANGMUBIAO_PRINT_JJ_QIAOSHI" routing="0" target="xiangmubiao_print_jj_qiaoshi.jsp" />
+      </result>
+      <result name="XIANGMUBIAO_PRINT_JJ_MENZUO">
+        <resourceEdge source="XIANGMUBIAO_PRINT_JJ_MENZUO" routing="0" target="xiangmubiao_print_jj_menzuo.jsp" />
+      </result>
+      <result name="XIANGMUBIAO_PRINT_JJ_TASHI">
+        <resourceEdge source="XIANGMUBIAO_PRINT_JJ_TASHI" routing="0" target="xiangmubiao_print_jj_tashi.jsp" />
+      </result>
+      <result name="XIANGMUBIAO_PRINT_JJ_JIXIESHI">
+        <resourceEdge source="XIANGMUBIAO_PRINT_JJ_JIXIESHI" routing="0" target="xiangmubiao_print_jj_jixieshi.jsp" />
+      </result>
+      <result name="XIANGMUBIAO_PRINT_JJ_LIUDONGSHI">
+        <resourceEdge source="XIANGMUBIAO_PRINT_JJ_LIUDONGSHI" routing="0" target="xiangmubiao_print_jj_liudongshi.jsp" />
+      </result>
+      <result name="XIANGMUBIAO_PRINT_JJ_SHENGJIANGJI">
+        <resourceEdge source="XIANGMUBIAO_PRINT_JJ_SHENGJIANGJI" routing="0" target="xiangmubiao_print_jj_shengjiangji.jsp" />
+      </result>
+      <result name="PRINT_YSJL_1100_NJ">
+        <resourceEdge source="PRINT_YSJL_1100_NJ" routing="0" target="ysjl_1100_nj_print.jsp" />
+      </result>
+      <result name="PRINT_YSJL_1100_WJ">
+        <resourceEdge source="PRINT_YSJL_1100_WJ" routing="0" target="ysjl_1100_wj_print.jsp" />
+      </result>
+      <result name="PRINT_YSJL_1300_NJ">
+        <resourceEdge source="PRINT_YSJL_1300_NJ" routing="0" target="ysjl_1300_nj_print.jsp" />
+      </result>
+      <result name="PRINT_YSJL_1300_WJ">
+        <resourceEdge source="PRINT_YSJL_1300_WJ" routing="0" target="ysjl_1300_wj_print.jsp" />
+      </result>
+      <result name="PRINT_MENSHI_AJ_SUCCESS">
+        <resourceEdge source="PRINT_MENSHI_AJ_SUCCESS" routing="0" target="ysjl_qzjx_ms_print.jsp" />
+      </result>
+      <result name="PRINT_TASHI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_TASHI_DJ_SUCCESS" routing="0" target="ysjl_qzjx_ts_print.jsp" />
+      </result>
+      <result name="PRINT_TASHI_AJ_SUCCESS">
+        <resourceEdge source="PRINT_TASHI_AJ_SUCCESS" routing="0" target="ysjl_qzjx_ts_print.jsp" />
+      </result>
+      <result name="PRINT_LIUDONGSHI_DJ_SUCCESS">
+        <resourceEdge source="PRINT_LIUDONGSHI_DJ_SUCCESS" routing="0" target="ysjl_qzjx_lds_print.jsp" />
+      </result>
+      <result name="PRINT_LIUDONGSHI_AJ_SUCCESS" />
+      <result name="PRINT_SHIGONGSHENGJIANGJI_DJ_SUCCESS" />
+      <result name="PRINT_SHIGONGSHENGJIANGJI_AJ_SUCCESS" />
+      <result name="PRINT_JIANYISHENGJIANGJI_DJ_SUCCESS" />
+      <result name="PRINT_JIANYISHENGJIANGJI_AJ_SUCCESS" />
+      <result name="PRINT_CHUIZHISHENGJIANGLEI_DJ_SUCCESS" />
+      <result name="PRINT_CHUIZHISHENGJIANGLEI_AJ_SUCCESS" />
+      <result name="PRINT_SHENGJIANGHENGYILEI_DJ_SUCCESS" />
+      <result name="PRINT_SHENGJIANGHENGYILEI_AJ_SUCCESS" />
+      <result name="PRINT_JIANYISHENGJIANGLEI_DJ_SUCCESS" />
+      <result name="PRINT_JIANYISHENGJIANGLEI_AJ_SUCCESS" />
+      <result name="PRINT_CHANGCHE_DJ_SUCCESS" />
+      <result name="PRINT_CHANGCHE_AJ_SUCCESS" />
+      <result name="PRINT_GLZZ_AJ_SUCCESS" />
+      <result name="PRINT_GLSZ_AJ_SUCCESS" />
+      <result name="PRINT_MENZUO_DJ_SUCCESS" />
+      <result name="PRINT_MENZUO_AJ_SUCCESS" />
+    </action>
+    <action name="ysjl" location="0,0" size="0,0" />
+    <action name="upload" location="0,0" size="0,0" />
+  </package>
+  <package name="struts_approval" location="0,0" size="0,0">
+    <action name="approval" location="0,0" size="0,0" />
+    <action name="flowIdea" location="0,0" size="0,0" />
+    <action name="approvalList" location="0,0" size="0,0" />
+  </package>
+  <webResource name="index.jsp" path="jsp/common/index.jsp" location="1053,520" size="150,55" />
+  <webResource name="userSetypeAjax.jsp" path="jsp/sys/userSetypeAjax.jsp" location="1566,30" size="150,55" />
+  <webResource name="hzd_print.jsp" path="jsp/biz/bjgl/hzd_print.jsp" location="801,555" size="150,55" />
+  <webResource name="jybg_print.jsp" path="jsp/biz/bggl/jybg_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_info.jsp" path="jsp/biz/bggl/hgz/jybg_info.jsp" location="0,0" size="0,0" />
+  <webResource name="hzd_qp_print.jsp" path="jsp/biz/bjgl/hzd_qp_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qp_czcr_hege_print.jsp" path="jsp/biz/bggl/jybg_qp_czcr_hege_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qp_czcr_panfei_print.jsp" path="jsp/biz/bggl/jybg_qp_czcr_panfei_print.jsp" location="0,0" size="0,0" />
+  <webResource name="hzd_print_info.jsp" path="jsp/biz/bjgl/hzd_print_info.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/jybg_ylrq_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_yc_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/jybg_ylrq_yc_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_bhcd_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/bhcd/jybg_ylrq_bhcd_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_bhjh_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/bhjh/jybg_ylrq_bhjh_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_ydjc_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/ydjc/jybg_ylrq_ydjc_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_jxfx_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/jxfx/jybg_ylrq_jxfx_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_nysy_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/nysy/jybg_ylrq_nysy_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_fjjy_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/fjjy/jybg_ylrq_fjjy_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_qmxsy_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/qmxsy/jybg_ylrq_qmxsy_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_ajlsy_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj//ajlsy/jybg_ylrq_ajlsy_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_clcffx_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/clcffx/jybg_ylrq_clcffx_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_hlsjlsy_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/hlsjlsy/jybg_ylrq_hlsjlsy_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ylrq_aqfjjy_dj_dy.jsp" path="/jsp/biz/bggl/2000/dj/aqfjjy/jybg_ylrq_aqfjjy_dj_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ws_csjc_dy.jsp" path="/jsp/biz/bggl/2000/dj/csjc/jybg_ws_csjc_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ws_cfjy_dy.jsp" path="/jsp/biz/bggl/2000/dj/cfjy/jybg_ws_cfjy_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ws_stjc_dy.jsp" path="/jsp/biz/bggl/2000/dj/stjc/jybg_ws_stjc_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ws_sxjc_dy.jsp" path="/jsp/biz/bggl/2000/dj/sxjc/jybg_ws_sxjc_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ws_sfsjc_dy.jsp" path="/jsp/biz/bggl/2000/dj/sfsjc/jybg_ws_sfsjc_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ws_ysscf_dy.jsp" path="/jsp/biz/bggl/2000/dj/ysscf/jybg_ws_ysscf_dy.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ckdt_print_dj.jsp" path="jsp/biz/bggl/3000/3100/jybg_ckdt_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yysdt_print_yjf_aj.jsp" path="jsp/biz/bggl/3000/3100/jybg_yysdt_print_yjf_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yysdt_print_wjf_aj.jsp" path="jsp/biz/bggl/3000/3100/jybg_yysdt_print_wjf_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yyht_print.jsp" path="jsp/biz/bggl/3000/3300/jybg_yyht_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yykt_print.jsp" path="jsp/biz/bggl/3000/3300/jybg_yykt_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_zwdt_print_aj.jsp" path="jsp/biz/bggl/3000/3400/jybg_zwdt_print_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_zwdt_print_dj.jsp" path="jsp/biz/bggl/3000/3400/jybg_zwdt_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_zdft_print_aj.jsp" path="jsp/biz/bggl/3000/3500/jybg_zdft_print_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_zdft_print_dj.jsp" path="jsp/biz/bggl/3000/3500/jybg_zdft_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qiaoshi_print_dj.jsp" path="jsp/biz/bggl/4000/4100/dj/jybg_qiaoshi_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_menshi_print_dj.jsp" path="jsp/biz/bggl/4000/4200/dj/jybg_menshi_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_tashi_print_dj.jsp" path="jsp/biz/bggl/4000/4300/dj/jybg_tashi_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_shengjiangji_print_dj.jsp" path="jsp/biz/bggl/4000/4800/jybg_shengjiangji_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_jixieshi_print_dj.jsp" path="jsp/biz/bggl/4000/4D00/dj/jybg_jixieshi_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_gygl_nj_print.jsp" path="jsp/biz/bggl/1000/dj/jybg_gygl_nj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_gygl_wj_print.jsp" path="jsp/biz/bggl/1000/dj/jybg_gygl_wj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_gygl_scl_print.jsp" path="jsp/biz/bggl/1000/dj/jybg_gygl_scl_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_cc_print.jsp" path="jsp/biz/bggl/5000/jybg_cc_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_dj_print.jsp" path="jsp/biz/bggl/3000/3100/ysjl_yysdt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yydt_dj_print.jsp" path="jsp/biz/bggl/3000/3300/ysjl_yydt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zwdt_dj_print.jsp" path="jsp/biz/bggl/3000/3400/ysjl_zwdt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zdft_dj_print.jsp" path="jsp/biz/bggl/3000/3500/ysjl_zdft_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_aj_print.jsp" path="jsp/biz/bggl/3000/3100/ysjl_yysdt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yydt_aj_print.jsp" path="jsp/biz/bggl/3000/3300/ysjl_yydt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zwdt_aj_print.jsp" path="jsp/biz/bggl/3000/3400/ysjl_zwdt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zdft_aj_print.jsp" path="jsp/biz/bggl/3000/3500/ysjl_zdft_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_dj_print.jsp" path="jsp/biz/ysjl/3000/3100/ysjl_yysdt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yydt_dj_print.jsp" path="jsp/biz/ysjl/3000/3300/ysjl_yydt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zwdt_dj_print.jsp" path="jsp/biz/ysjl/3000/3400/ysjl_zwdt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zdft_dj_print.jsp" path="jsp/biz/ysjl/3000/3500/ysjl_zdft_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_aj_print.jsp" path="jsp/biz/ysjl/3000/3100/ysjl_yysdt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yydt_aj_print.jsp" path="jsp/biz/ysjl/3000/3300/ysjl_yydt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zwdt_aj_print.jsp" path="jsp/biz/ysjl/3000/3400/ysjl_zwdt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zdft_aj_print.jsp" path="jsp/biz/ysjl/3000/3500/ysjl_zdft_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_qzjx_qs_print.jsp" path="jsp/biz/ysjl/4000/dj/ysjl_qzjx_qs_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_qzjx_ms_print.jsp" path="jsp/biz/ysjl/4000/dj/ysjl_qzjx_ms_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_qzjx_qs_print.jsp" path="jsp/biz/ysjl/4000/azjj/ysjl_qzjx_qs_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qiaoshi_aj_print.jsp" path="jsp/biz/bggl/4000/4100/jybg_qiaoshi_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_menshi_aj_print.jsp" path="jsp/biz/bggl/4000/4200/aj/jybg_menshi_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qiaoshi_print_dj.jsp" path="jsp/biz/bggl/4000/dj/jybg_qiaoshi_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qiaoshi_aj_print.jsp" path="jsp/biz/bggl/4000/jybg_qiaoshi_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_menshi_print_dj.jsp" path="jsp/biz/bggl/4000/dj/jybg_menshi_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_menshi_aj_print.jsp" path="jsp/biz/bggl/4000/aj/jybg_menshi_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_tashi_print_dj.jsp" path="jsp/biz/bggl/4000/dj/jybg_tashi_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ckdt_print_dj.jsp" path="jsp/biz/bggl/3000/dj/jybg_ckdt_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yysdt_print_yjf_aj.jsp" path="jsp/biz/bggl/3000/aj/jybg_yysdt_print_yjf_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yysdt_print_wjf_aj.jsp" path="jsp/biz/bggl/3000/aj/jybg_yysdt_print_wjf_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_zwdt_print_aj.jsp" path="jsp/biz/bggl/3000/aj/jybg_zwdt_print_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_zwdt_print_dj.jsp" path="jsp/biz/bggl/3000/dj/jybg_zwdt_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_zdft_print_aj.jsp" path="jsp/biz/bggl/3000/aj/jybg_zdft_print_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_zdft_print_dj.jsp" path="jsp/biz/bggl/3000/dj/jybg_zdft_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qiaoshi_aj_print.jsp" path="jsp/biz/bggl/4000/aj/jybg_qiaoshi_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_shengjiangji_print_dj.jsp" path="jsp/biz/bggl/4000/dj/jybg_shengjiangji_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_jixieshi_print_dj.jsp" path="jsp/biz/bggl/4000/dj/jybg_jixieshi_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_liudong_print_dj.jsp" path="jsp/biz/bggl/4000/dj/jybg_liudong_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yykt_print.jsp" path="jsp/biz/bggl/3000/dj/jybg_yykt_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_tashi_aj_print.jsp" path="jsp/biz/bggl/4000/aj/jybg_tashi_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_jixieshi_4D10_aj_print.jsp" path="jsp/biz/bggl/4000/aj/jybg_jixieshi_4D10_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_jixieshi_4D70_aj_print.jsp" path="jsp/biz/bggl/4000/aj/jybg_jixieshi_4D70_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_jixieshi_print_dj_4D10.jsp" path="jsp/biz/bggl/4000/dj/jybg_jixieshi_print_dj_4D10.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_jixieshi_print_dj_4D70.jsp" path="jsp/biz/bggl/4000/dj/jybg_jixieshi_print_dj_4D70.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yjrzt_wj_print.jsp" path="jsp/biz/bggl/1000/jybg_yjrzt_wj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yjrzt_nj_print.jsp" path="jsp/biz/bggl/1000/jybg_yjrzt_nj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_dz_wj_print.jsp" path="jsp/biz/bggl/1000/jybg_dz_wj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_dz_nj_print.jsp" path="jsp/biz/bggl/1000/jybg_dz_nj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_gygl_wj_print.jsp" path="jsp/biz/bggl/1000/jybg_gygl_wj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_gygl_nj_print.jsp" path="jsp/biz/bggl/1000/jybg_gygl_nj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_dj_print.jsp" path="jsp/biz/ysjl/3000/dj/ysjl_yysdt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yydt_dj_print.jsp" path="jsp/biz/ysjl/3000/dj/ysjl_yydt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zwdt_dj_print.jsp" path="jsp/biz/ysjl/3000/dj/ysjl_zwdt_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zdft_dj_print.jsp" path="jsp/biz/ysjl/3000/dj/ysjl_zdft_dj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_aj_print.jsp" path="jsp/biz/ysjl/3000/aj/ysjl_yysdt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yydt_aj_print.jsp" path="jsp/biz/ysjl/3000/aj/ysjl_yydt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zwdt_aj_print.jsp" path="jsp/biz/ysjl/3000/aj/ysjl_zwdt_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_zdft_aj_print.jsp" path="jsp/biz/ysjl/3000/aj/ysjl_zdft_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_qzjx_ts_print.jsp" path="jsp/biz/ysjl/4000/dj/ysjl_qzjx_ts_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_ckdt_print_aj.jsp" path="jsp/biz/bggl/3000/aj/jybg_ckdt_print_aj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_yyht_print.jsp" path="jsp/biz/bggl/3000/aj/jybg_yyht_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_menzuo_print_dj.jsp" path="jsp/biz/bggl/4000/dj/jybg_menzuo_print_dj.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_mz_aj_print.jsp" path="jsp/biz/bggl/4000/aj/jybg_mz_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_jixieshi_print_dj_4D80.jsp" path="jsp/biz/bggl/4000/dj/jybg_jixieshi_print_dj_4D80.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_jixieshi_4D80_aj_print.jsp" path="jsp/biz/bggl/4000/aj/jybg_jixieshi_4D80_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_1100_nj_print.jsp" path="jsp/biz/bggl/1000/dj/jybg_1100_nj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_1100_wj_print.jsp" path="jsp/biz/bggl/1000/dj/jybg_1100_wj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_1300_nj_print.jsp" path="jsp/biz/bggl/1000/dj/jybg_1300_nj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_1300_wj_print.jsp" path="jsp/biz/bggl/1000/dj/jybg_1300_wj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_cc_aj_print.jsp" path="jsp/biz/bggl/5000/jybg_cc_aj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_glzz_print.jsp" path="jsp/biz/bggl/1000/aj/jybg_glzz_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_glsz_print.jsp" path="jsp/biz/bggl/1000/aj/jybg_glsz_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qzjx_print.jsp" path="jsp/biz/bggl/qzjxhgz/jybg_qzjx_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_qzjx_jzph_print.jsp" path="jsp/biz/bggl/qzjxhgz/jybg_qzjx_jzph_print.jsp" location="0,0" size="0,0" />
+  <webResource name="jybg_info.jsp" path="jsp/biz/bggl/qzjxhgz/jybg_info.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_aj_wjf_print.jsp" path="jsp/biz/ysjl/3000/aj/ysjl_yysdt_aj_wjf_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_aj_yjf_print.jsp" path="jsp/biz/ysjl/3000/aj/ysjl_yysdt_aj_yjf_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_yysdt_aj_qzqd_print.jsp" path="jsp/biz/ysjl/3000/aj/ysjl_yysdt_aj_qzqd_print.jsp" location="0,0" size="0,0" />
+  <webResource name="xiangmubiao_print_jj_menshi.jsp" path="jsp/biz/ysjl/4000/azjj/xiangmubiao_print_jj_menshi.jsp" location="0,0" size="0,0" />
+  <webResource name="xiangmubiao_print_jj_qiaoshi.jsp" path="jsp/biz/ysjl/4000/azjj/xiangmubiao_print_jj_qiaoshi.jsp" location="0,0" size="0,0" />
+  <webResource name="xiangmubiao_print_jj_menzuo.jsp" path="jsp/biz/ysjl/4000/azjj/xiangmubiao_print_jj_menzuo.jsp" location="0,0" size="0,0" />
+  <webResource name="xiangmubiao_print_jj_tashi.jsp" path="jsp/biz/ysjl/4000/azjj/xiangmubiao_print_jj_tashi.jsp" location="0,0" size="0,0" />
+  <webResource name="xiangmubiao_print_jj_jixieshi.jsp" path="jsp/biz/ysjl/4000/azjj/xiangmubiao_print_jj_jixieshi.jsp" location="0,0" size="0,0" />
+  <webResource name="xiangmubiao_print_jj_liudongshi.jsp" path="jsp/biz/ysjl/4000/azjj/xiangmubiao_print_jj_liudongshi.jsp" location="0,0" size="0,0" />
+  <webResource name="xiangmubiao_print_jj_shengjiangji.jsp" path="jsp/biz/ysjl/4000/azjj/xiangmubiao_print_jj_shengjiangji.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_1100_nj_print.jsp" path="jsp/biz/ysjl/1000/dj/ysjl_1100_nj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_1100_wj_print.jsp" path="jsp/biz/ysjl/1000/dj/ysjl_1100_wj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_1300_nj_print.jsp" path="jsp/biz/ysjl/1000/dj/ysjl_1300_nj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_1300_wj_print.jsp" path="jsp/biz/ysjl/1000/dj/ysjl_1300_wj_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_qzjx_ms_print.jsp" path="jsp/biz/ysjl/4000/azjj/ysjl_qzjx_ms_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_qzjx_ts_print.jsp" path="jsp/biz/ysjl/4000/azjj/ysjl_qzjx_ts_print.jsp" location="0,0" size="0,0" />
+  <webResource name="ysjl_qzjx_lds_print.jsp" path="jsp/biz/ysjl/4000/dj/ysjl_qzjx_lds_print.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

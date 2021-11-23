@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">  
+<taglib>   
+    <tlibversion>0.1</tlibversion>
+    <jspversion>2.2</jspversion> 
+    <shortname>Stone</shortname>  
+    <uri>/stone</uri>  
+    <tag>  
+        <name>sa</name>  
+        <tagclass>com.stone.support.SupportSATag</tagclass>  
+        <bodycontent>JSP</bodycontent>  
+        <attribute>
+            <name>code</name>  
+            <required>true</required>  
+        </attribute>  
+    </tag>
+</taglib>  

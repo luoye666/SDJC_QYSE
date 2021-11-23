@@ -1,0 +1,89 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "xingming": "懂萌萌", 
+                "xingbie": "男", 
+                "jigoumingcheng": "青岛市质量技术监督局", 
+                "lianxidianhua": "18753197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-08-08"
+            },{
+                "xingming": "李连杰", 
+                "xingbie": "男", 
+                "jigoumingcheng": "青岛市质量技术监督局", 
+                "lianxidianhua": "18753197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-09-08"
+            },{
+                "xingming": "成龙", 
+                "xingbie": "男", 
+                "jigoumingcheng": "胶州市质量技术监督局", 
+                "lianxidianhua": "18253198765", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-10-08"
+            },{
+                "xingming": "刘庆国", 
+                "xingbie": "男", 
+                "jigoumingcheng": "泰安市质量技术监督局", 
+                "lianxidianhua": "18253197965", 
+                "zhiwu": "主任",
+                "xukezhengriqi": "2015-02-08"
+            },{
+                "xingming": "韩飞", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18267197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-09-08"
+            },{
+                "xingming": "马景涛", 
+                "xingbie": "女", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18278967965", 
+                "zhiwu": "主任",
+                "xukezhengriqi": "2015-08-08"
+            },{
+                "xingming": "邓森", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18253197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-06-08"
+            },{
+                "xingming": "滕永丽", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18853197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2015-04-08"
+            },{
+                "xingming": "滕永明", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18753197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2014-02-08"
+            },{
+                "xingming": "潘明深", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18853197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2014-08-08"
+            },{
+                "xingming": "赵亮亮", 
+                "xingbie": "女", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18253197965", 
+                "zhiwu": "普通职员",
+                "xukezhengriqi": "2013-08-08"
+            } 
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+              "juesemingcheng": "超级管理员",
+              "juesedaima": "supperAdmin"
+            },{
+                "juesemingcheng": "管理员",
+                "juesedaima": "Admin"
+            },{
+                "juesemingcheng": "普通人员",
+                "juesedaima": "putongrenyuan"
+            },{
+                "juesemingcheng": "监察员",
+                "juesedaima": "jianchayuan"
+            },{
+                "juesemingcheng": "检验员",
+                "juesedaima": "jianyanyuan"
+            },{
+                "juesemingcheng": "作业人员",
+                "juesedaima": "zuoyerenyuan"
+            }
+        ]
+    }
+}

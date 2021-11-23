@@ -1,0 +1,90 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "danweimingcheng": "济南市人民政府", 
+                "danweidizhi": "济南市天桥区105号", 
+                "zuzhijigoudaima": "4465XXXX-3", 
+                "danweifuzeren": "李晨", 
+                "lianxidianhua": "18753197965" 
+            },{
+                "danweimingcheng": "群康家园", 
+                "danweidizhi": "天桥区花园路105号", 
+                "zuzhijigoudaima": "74545XXXX-2", 
+                "danweifuzeren": "张艺谋", 
+                "lianxidianhua": "15253190987" 
+            },{
+                "danweimingcheng": "和谐广场", 
+                "danweidizhi": "济南市槐荫区", 
+                "zuzhijigoudaima": "8793XXXX-7", 
+                "danweifuzeren": "吴可嘉", 
+                "lianxidianhua": "15204990987" 
+            },{
+                "danweimingcheng": "丁豪广场", 
+                "danweidizhi": "济南市高新区", 
+                "zuzhijigoudaima": "94543XXXX-7", 
+                "danweifuzeren": "段晓峰", 
+                "lianxidianhua": "15204991033" 
+            },{
+                "danweimingcheng": "黄台宾馆", 
+                "danweidizhi": "济南市天桥区", 
+                "zuzhijigoudaima": "93242XXXX-7", 
+                "danweifuzeren": "周涛", 
+                "lianxidianhua": "15897991033" 
+            },{
+                "danweimingcheng": "洪家楼大润发", 
+                "danweidizhi": "济南市天桥区", 
+                "zuzhijigoudaima": "9789XXXX-7", 
+                "danweifuzeren": "张三风", 
+                "lianxidianhua": "15204991033" 
+            },{
+                "danweimingcheng": "泉盈大酒店", 
+                "danweidizhi": "济南市天桥区", 
+                "zuzhijigoudaima": "9123XXX-7", 
+                "danweifuzeren": "桥荣校", 
+                "lianxidianhua": "15834391033" 
+            },{
+                "danweimingcheng": "群康家园", 
+                "danweidizhi": "天桥区花园路105号", 
+                "zuzhijigoudaima": "74545XXXX-2", 
+                "danweifuzeren": "张艺谋", 
+                "lianxidianhua": "15253190987" 
+            },{
+                "danweimingcheng": "和谐广场", 
+                "danweidizhi": "济南市槐荫区", 
+                "zuzhijigoudaima": "8793XXXX-7", 
+                "danweifuzeren": "吴可嘉", 
+                "lianxidianhua": "15204990987" 
+            },{
+                "danweimingcheng": "丁豪广场", 
+                "danweidizhi": "济南市高新区", 
+                "zuzhijigoudaima": "94543XXXX-7", 
+                "danweifuzeren": "段晓峰", 
+                "lianxidianhua": "15204991033" 
+            },{
+                "danweimingcheng": "黄台宾馆", 
+                "danweidizhi": "济南市天桥区", 
+                "zuzhijigoudaima": "93242XXXX-7", 
+                "danweifuzeren": "周涛", 
+                "lianxidianhua": "15897991033" 
+            },{
+                "danweimingcheng": "洪家楼大润发", 
+                "danweidizhi": "济南市天桥区", 
+                "zuzhijigoudaima": "9789XXXX-7", 
+                "danweifuzeren": "张三风", 
+                "lianxidianhua": "15204991033" 
+            },{
+                "danweimingcheng": "泉盈大酒店", 
+                "danweidizhi": "济南市天桥区", 
+                "zuzhijigoudaima": "9123XXX-7", 
+                "danweifuzeren": "桥荣校", 
+                "lianxidianhua": "15834391033" 
+            } 
+        ]
+    }
+}

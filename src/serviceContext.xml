@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    ">
+	<!-- 系统管理所需Service配置 -->
+	<bean id="userService" class="com.stone.sys.service.impl.UserServiceImpl" parent="supportService"></bean>
+	<bean id="menuService" class="com.stone.sys.service.impl.MenuServiceImpl" parent="supportService">
+		<!--<property ref="processEngine" name="processEngine"/>-->
+	</bean>
+	<bean id="roleService" class="com.stone.sys.service.impl.RoleServiceImpl" parent="supportService"></bean>
+	<bean id="organService" class="com.stone.sys.service.impl.OrganServiceImpl" parent="supportService"></bean>
+	<bean id="dicService" class="com.stone.sys.service.impl.DicServiceImpl" parent="supportService"></bean>
+	<bean id="dirService" class="com.stone.sys.service.impl.SeDirServiceImpl" parent="supportService"></bean>
+	<bean id="logsService" class="com.stone.sys.service.impl.LogsService" parent="supportService"></bean>
+	
+	<bean id="dbaService" class="com.stone.sys.service.impl.DbServiceImpl" parent="supportService"></bean>
+	<!-- 基础数据所需Service配置 -->
+	<bean id="seCommonService" class="com.stone.biz.jcsj.service.SECommonService" parent="supportService"></bean>
+	<bean id="regService" class="com.stone.biz.jcsj.service.RegisterService" parent="supportService"></bean>
+	<!-- 单位管理Service -->
+	<bean id="utilsService" class="com.stone.biz.utils.service.UtilsCommonService" parent="supportService"></bean>
+	<!-- 作业人员Service -->
+	<bean id="zuoyeService" class="com.stone.biz.rygl.service.ZuoYeRenYuanService" parent="supportService"></bean>
+	<!-- 数据审核Service -->
+	<bean id="sjshService" class="com.stone.biz.sjsh.service.SjshService" parent="supportService"></bean>
+	<!-- 报检管理Service -->
+	<bean id="bjdService" class="com.stone.biz.bjgl.service.BjdService" parent="supportService"></bean>
+	<!-- web Service -->
+	<bean id="bjdWebService" class="com.stone.webservice.bjgl.service.BjdWebService" parent="supportService"></bean>
+	<bean id="seWebService" class="com.stone.webservice.segl.service.SeWebService" parent="supportService"></bean>
+	<bean id="kggzWebService" class="com.stone.webservice.kggz.service.KggzWebService" parent="supportService"></bean>
+	<bean id="qdWebService" class="com.stone.webservice.qd.service.QDWebService" parent="supportService"></bean>
+	<!-- 消息处理机制 -->
+	<bean id="boxService" class="com.stone.biz.message.service.MessageBoxService" parent="supportService"></bean>
+	
+	<!-- lcshuju -->
+	<bean id="ywService" class="com.stone.client.YwService" parent="supportService"></bean>
+	
+	<bean id="dataSeListJob" class="com.stone.client.DataSyncService" parent="baseService"></bean>
+  	<bean id="dataSeListJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+  		<property name="targetObject" ref="dataSeListJob"></property>
+		<property name="targetMethod" value="findListSe"></property>
+		<property name="concurrent" value="false" />
+  	</bean>
+  	<bean id="dataSeListTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="dataSeListJobDetail"></property>
+		<property name="cronExpression" value="0 42 17 * * ?"></property>
+	</bean>
+	
+	<bean id="se96333" class="com.stone.webservice.se96333.service.SEDTZX" parent="supportService"></bean>
+  	<bean id="se96333JobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+  		<property name="targetObject" ref="se96333"></property>
+		<property name="targetMethod" value="toSE96333"></property>
+		<property name="concurrent" value="false" />
+  	</bean>
+  	<bean id="se96333Trigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="se96333JobDetail"></property>
+		<property name="cronExpression" value="0 0/2 * * * ?"></property>
+	</bean>
+	
+	
+	<bean id="dySeListJob" class="com.stone.client.DongYingYLRQService" parent="baseService"></bean>
+  	<bean id="dySeListJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+  		<property name="targetObject" ref="dySeListJob"></property>
+		<property name="targetMethod" value="findDYYlrq"></property>
+		<property name="concurrent" value="false" />
+  	</bean>
+  	<bean id="dySeListTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="dySeListJobDetail"></property>
+		<property name="cronExpression" value="0 0/3 * * * ?"></property>
+	</bean>
+	
+	
+	<bean id="whSeListJob" class="com.stone.client.WEIHAISEService" parent="baseService"></bean>
+  	<bean id="whSeListJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+  		<property name="targetObject" ref="whSeListJob"></property>
+		<property name="targetMethod" value="findWHSe"></property>
+		<property name="concurrent" value="false" />
+  	</bean>
+  	<bean id="whSeListTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="whSeListJobDetail"></property>
+		<property name="cronExpression" value="0 0/1 * * * ?"></property>
+	</bean>
+	
+	
+	<bean id="whDTSeListJob" class="com.stone.client.WEIHAIDTSEService" parent="baseService"></bean>
+  	<bean id="whDTSeListJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+  		<property name="targetObject" ref="whDTSeListJob"></property>
+		<property name="targetMethod" value="findWHDTSe"></property>
+		<property name="concurrent" value="false" />
+  	</bean>
+  	<bean id="whDTSeListTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="whDTSeListJobDetail"></property>
+		<property name="cronExpression" value="0 0/1 * * * ?"></property>
+	</bean>
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<!-- 
+				
+				<ref bean="se96333Trigger"/> 
+				<ref bean="dySeListTrigger"/> 
+				<ref bean="whSeListTrigger"/> 
+				<ref bean="dataSeListTrigger"/>  
+				<ref bean="whDTSeListTrigger"/> 
+				<ref bean="whDTSeListTrigger"/> 
+				-->
+			
+			</list>
+		</property>
+	</bean>
+</beans>

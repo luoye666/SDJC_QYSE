@@ -1,0 +1,100 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 1, 
+        "total": 1, 
+        "records": 1, 
+        "rows": [
+            {
+                "danweimingcheng": "济南特安有限公司", 
+                "daiweidizhi": "济南市天桥区花园路105", 
+                "zuzhijigou": "46650460-6", 
+                "xukeriqi": "乘客电梯", 
+                "fadingdaibiao": "赵洪亮", 
+                "lianxidianhua": "18753197943",
+                "gongsiwangzhi": "www.tean.com"
+            },{
+                "danweimingcheng": "上海三菱电梯公司山东分公司", 
+                "daiweidizhi": "泺源大街192", 
+                "zuzhijigou": "46890460-6", 
+                "xukeriqi": "2015-05-06", 
+                "fadingdaibiao": "赵小川", 
+                "lianxidianhua": "18653197943",
+                "gongsiwangzhi": "www.sanling.com"
+            },{
+                "danweimingcheng": "济南国菱电梯公司", 
+                "daiweidizhi": "北小辛庄西街57号楼57-14", 
+                "zuzhijigou": "45650460-6", 
+                "xukeriqi": "2014-09-08", 
+                "fadingdaibiao": "白金飞", 
+                "lianxidianhua": "18253197943",
+                "gongsiwangzhi": "www.guoling.com"
+            },{
+                "danweimingcheng": "山东高斯达电梯有限公司", 
+                "daiweidizhi": "辛寨镇高斯达大街", 
+                "zuzhijigou": "46870460-6", 
+                "xukeriqi": "2014-09-07", 
+                "fadingdaibiao": "周华健", 
+                "lianxidianhua": "18253197943",
+                "gongsiwangzhi": "www.dasi.com"
+            },{
+                "danweimingcheng": "通力电梯公司济南分公司", 
+                "daiweidizhi": "泺源大街150中信广场4层415", 
+                "zuzhijigou": "47750460-6", 
+                "xukeriqi": "2014-06-04", 
+                "fadingdaibiao": "周懂", 
+                "lianxidianhua": "18253197943",
+                "gongsiwangzhi": "www.hengdian.com"
+            },{
+                "danweimingcheng": "广州日立电梯济南分公司", 
+                "daiweidizhi": "山大路178号银座数码广场16层1608", 
+                "zuzhijigou": "43350460-6", 
+                "xukeriqi": "2013-09-06", 
+                "fadingdaibiao": "王爽", 
+                "lianxidianhua": "15253197943",
+                "gongsiwangzhi": "www.gongsisi.com"
+            },{
+                "danweimingcheng": "山东三洋电梯销售有限公司", 
+                "daiweidizhi": "山大路178号银座数码广场16层1608", 
+                "zuzhijigou": "42250460-6", 
+                "xukeriqi": "2014-09-06", 
+                "fadingdaibiao": "刘德华", 
+                "lianxidianhua": "15253197943",
+                "gongsiwangzhi": "www.gosdi.com"
+            },{
+                "danweimingcheng": "山东高斯达电梯有限公司", 
+                "daiweidizhi": "辛寨镇高斯达大街", 
+                "zuzhijigou": "46870460-6", 
+                "xukeriqi": "2014-09-07", 
+                "fadingdaibiao": "周华健", 
+                "lianxidianhua": "18253197943",
+                "gongsiwangzhi": "www.dasi.com"
+            },{
+                "danweimingcheng": "通力电梯公司济南分公司", 
+                "daiweidizhi": "泺源大街150中信广场4层415", 
+                "zuzhijigou": "47750460-6", 
+                "xukeriqi": "2014-06-04", 
+                "fadingdaibiao": "周懂", 
+                "lianxidianhua": "18253197943",
+                "gongsiwangzhi": "www.hengdian.com"
+            },{
+                "danweimingcheng": "山东高斯达电梯有限公司", 
+                "daiweidizhi": "辛寨镇高斯达大街", 
+                "zuzhijigou": "46870460-6", 
+                "xukeriqi": "2014-09-07", 
+                "fadingdaibiao": "周华健", 
+                "lianxidianhua": "18253197943",
+                "gongsiwangzhi": "www.dasi.com"
+            },{
+                "danweimingcheng": "广州日立电梯济南分公司", 
+                "daiweidizhi": "山大路178号银座数码广场16层1608", 
+                "zuzhijigou": "43350460-6", 
+                "xukeriqi": "2013-09-06", 
+                "fadingdaibiao": "王爽", 
+                "lianxidianhua": "15253197943",
+                "gongsiwangzhi": "www.gongsisi.com"
+            }
+        ]
+    }
+}

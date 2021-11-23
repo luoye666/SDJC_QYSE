@@ -1,0 +1,115 @@
+{
+    "status": 200, 
+    "msg": "success", 
+    "data": {
+        "page": 2, 
+        "total": 28, 
+        "records": 28, 
+        "rows": [
+            {
+                "xingming": "赵洪亮", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18753197965", 
+                "zhiwu": "监察员" ,
+                "xukezhengriqi":"2015-09-08"
+            },
+             {
+                "xingming": "周杰伦", 
+                "xingbie": "男", 
+                "jigoumingcheng": "青岛市质量技术监督局", 
+                "lianxidianhua": "18653197965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2014-09-08"
+            },
+             {
+                "xingming": "葛帅", 
+                "xingbie": "男", 
+                "jigoumingcheng": "胶州市质量技术监督局", 
+                "lianxidianhua": "15253197965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2015-09-08"
+            },
+             {
+                "xingming": "赵洪亮", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18753197965", 
+                "zhiwu": "保安员" ,
+                "xukezhengriqi":"2015-06-08"
+            },
+             {
+                "xingming": "徐竞科", 
+                "xingbie": "男", 
+                "jigoumingcheng": "泰安市质量技术监督局", 
+                "lianxidianhua": "15204997965", 
+                "zhiwu": "主任" ,
+                "xukezhengriqi":"2015-04-08"
+            },
+             {
+                "xingming": "杨笑天", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18653197965", 
+                "zhiwu": "主任" ,
+                "xukezhengriqi":"2014-04-08"
+            },
+             {
+                "xingming": "赵文雅", 
+                "xingbie": "女", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "1823197965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2013-09-08"
+            },
+             {
+                "xingming": "王凡君", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "15213197965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2015-09-08"
+            },
+             {
+                "xingming": "李晨", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18753197965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2015-09-08"
+            },
+             {
+                "xingming": "朱晓凯", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18243197965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2015-08-09"
+            },
+             {
+                "xingming": "周星驰", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18743197965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2015-08-08"
+            },
+             {
+                "xingming": "周润发", 
+                "xingbie": "男", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18733337965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2015-08-08"
+            },
+             {
+                "xingming": "赵丽颖", 
+                "xingbie": "女", 
+                "jigoumingcheng": "济南市质量技术监督局", 
+                "lianxidianhua": "18233337965", 
+                "zhiwu": "普通职员" ,
+                "xukezhengriqi":"2015-08-08"
+            }        
+        ]
+    }
+}
